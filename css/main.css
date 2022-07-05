@@ -3,10 +3,12 @@
 @import url(./reset.css);
 
 body{
-    background: url(../발사믹/img/background.ea292d81.jpg) no-repeat top/100% 100%;
+    background: url(../발사믹/img/background.ea292d81.jpg) no-repeat fixed top/cover;
 }
 
-
+body *{
+    outline: 2px dashed rgb(245, 148, 229);
+}
 
 header{
     height: 150px;
@@ -82,6 +84,7 @@ main article ul{
 
 article img{
     width: 900px;
+    height: 600px;
 }
 
 article input{display: none;}
@@ -91,15 +94,19 @@ article input{display: none;}
 #btn02:checked~.travel{left: -900px;}
 #btn03:checked~.travel{left: -1800px;}
 
-.btn i{
-    color: white;
+div.btn{
+        color: white;
     position: relative;
     bottom: 30px;
 }
 
+.btn i{
+
+}
+
 /* 로그인 영역 */
 main .log{
-    height: 506px;
+    height: 600px;
     float: left;
     width: 550px;
     position: absolute;
@@ -125,6 +132,7 @@ main .int{
     width: 100%;
     height: 300px;
     display: inline-block;
+    margin-top: 100px;
 }
 
 .int h2{
@@ -142,8 +150,13 @@ main .int{
 }
 
 /* 전직업 소개 시작 */
+.class{
+    background: url(../발사믹/img/전직업\ 미니.jpg) no-repeat top/100%;
+    height: 900px;
+}
+
 .class img{
-    width: 100%;
+
 }
 
 
