@@ -81,7 +81,10 @@ header select{
     width: 100%;
 }
 
-
+/* semitop 영역 */
+.semi{
+    position: relative;
+}
 
 /* 움직이는 웰페이퍼 영역 */
 main{
