@@ -84,17 +84,18 @@ header select{
 /* semitop 영역 */
 .semi{
     position: relative;
+    top: 300px;
+
 }
 
 /* 움직이는 웰페이퍼 영역 */
 main{
     height: 700px;
-    display: flex;
 }
 
 main .wall{
-    margin: 0 1%;
-    height: 500px;
+    height: 52vh;
+    width: 180vw;
 }
 
 main article{
@@ -126,6 +127,7 @@ article img{
     width: 900px;
     height: 100%;
     text-align: center;
+    object-fit: fill;
 }
 
 article input{display: none;}
