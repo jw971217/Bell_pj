@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+html{
+    font-size: 10px;
+}
+
+/* 헤더 영역 */
+.head{
+    display: flex;
+    height: 5vh;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    position: fixed;
+}
+
+header h1 img{
+    height: 5vh;
+}
+
+header ul{
+    display: flex;
+}
+
+/* 메인영역 시작 */
+.cont{
+    padding-top: 5vh;
+}
+
+/* 백그라운드 이미지 영역 */
+.cont .top{
+    width: 100%;
+    height: 74vh;
+    background: url(../발사믹/img/180cf1b1d2123e14e.gif) no-repeat bottom/cover;
+    border-bottom: 10px solid rgb(242, 255, 0);
+}
+
+/* 게임 간단 설명글 */
+.cont .int h2{
+    padding-top: 1vh;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cont .int p{
+    padding: 1vh;
+    font-size: 4rem;
+    text-align: center;
+}
+

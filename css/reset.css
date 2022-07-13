@@ -16,3 +16,7 @@ blockquote:before, blockquote:after,q:before, q:after {content: '';	content: non
 /*인용문 앞, 뒤똑에 콘텐츠 내용 빈공백 삽입*/
 table {border-collapse: collapse;	border-spacing: 0;}
 /*테이블 태그 작성시 셀과 셀 사이 여백을 없앰.*/
+a{
+    color: #000;
+    text-decoration: none;
+}
