@@ -1,5 +1,16 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap');
+
+/* 공사중 */
+*{
+    outline: 1px dashed hotpink;
+    box-sizing: border-box;
+}
+
+
+
+
 html{
     font-size: 10px;
 }
@@ -76,41 +87,54 @@ header ul li a{
 
 /* 게임 간단 설명글 */
 .cont .int h2{
-    padding-top: 1vh;
+    padding-top: 3vh;
     font-size: 4rem;
     font-weight: bold;
     text-align: center;
 }
 
+/* re-logic */
 .cont .int p{
     padding: 1vh;
     font-size: 4rem;
     text-align: center;
+    margin-top: 2vh;
 }
 
 /* 라인 */
 .line{
     width: 2px;
-    height: 5vh;
+    height: 6vh;
     background-color:#000;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 80px;
 }
 
 /* 소개글 */
-.int{
+.gint{
     display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: space-evenly
 }
 
 /* 글 */
-.int span{
-    @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap');
+.gint .word span{
     font-family: 'Sunflower', sans-serif;
+    font-size: 5vh;
+    justify-content: center;
+    width: 40vw;
+    display: block;
+    padding: 20px 0;
+    text-align: center;
 }
 
 /* 그림 */
-.int img{
-    width: 45vw;
+.gint img{
+    width: 40vw;
+    height: 45vh;
+    border-radius: 15px;
+    object-fit: cover;
 }
 
 
