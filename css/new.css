@@ -14,10 +14,12 @@ html{
     justify-content: space-between;
 }
 
+/* 로고 */
 header h1 img{
     height: 5vh;
 }
 
+/* 네비게이션 */
 header ul{
     display: flex;
     line-height: 5vh;
@@ -30,6 +32,34 @@ header ul li a{
     font-size: 1.1rem;
 }
 
+/* 상단 메뉴 글자에 밑줄 애니 */
+.head>ul>li>a>span{
+    position: relative;
+    /* 부모자격 */
+  }
+  /* 가상요소로 밑줄 */
+  .head>ul>li>a>span::after{
+    content: '';
+    display: block;
+    position: absolute;
+    /* 부모는 span */
+    bottom: -4px;
+    left: 0;
+    width: 0; /* 마우스 오버 시 100% */
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    /* 돌아올때 지연시간 없음 */
+    transition: width .2s ease-out;
+    /* transition: 0.4s; */
+  }
+
+  /* 상위매뉴 오버시가상요소 밑줄 애니 */
+  .head>ul>li:hover>a>span::after{
+    width: 100%;
+    /* 오버시에 기다리는 시간 0.4초 */
+    transition: 0.3s ease-out;
+  }
+
 /* 메인영역 시작 */
 .cont{
     padding-top: 5vh;
@@ -40,7 +70,7 @@ header ul li a{
     width: 100%;
     height: 74vh;
     background: url(../발사믹/img/180cf1b1d2123e14e.gif) no-repeat bottom/cover;
-    border-bottom: 10px solid rgb(242, 255, 0);
+    border-bottom: 10px solid rgb(255, 255, 0);
 }
 
 /* 게임 간단 설명글 */
@@ -56,4 +86,15 @@ header ul li a{
     font-size: 4rem;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
 
