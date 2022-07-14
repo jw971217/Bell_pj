@@ -12,6 +12,7 @@ html{
     border-bottom: 2px solid #000;
     position: fixed;
     justify-content: space-between;
+    background-color: #fff;
 }
 
 /* 로고 */
@@ -96,11 +97,21 @@ header ul li a{
     margin-top: 30px;
 }
 
+/* 소개글 */
+.int{
+    display: flex;
+}
 
+/* 글 */
+.int span{
+    @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap');
+    font-family: 'Sunflower', sans-serif;
+}
 
-
-
-
+/* 그림 */
+.int img{
+    width: 45vw;
+}
 
 
 
