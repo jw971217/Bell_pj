@@ -87,7 +87,14 @@ header ul li a{
     text-align: center;
 }
 
-
+/* 라인 */
+.line{
+    width: 2px;
+    height: 5vh;
+    background-color:#000;
+    margin: 0 auto;
+    margin-top: 30px;
+}
 
 
 
