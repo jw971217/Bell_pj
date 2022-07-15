@@ -133,10 +133,13 @@ header ul li a{
 .gint img{
     width: 40vw;
     height: 45vh;
-    border-radius: 15px;
+    border-radius: 10px;
     object-fit: cover;
 }
 
-
-
+/* gif 보더 */
+.pic1{
+    border: 5px solid red;
+    border-radius: 15px;
+}
 
