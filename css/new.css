@@ -118,6 +118,64 @@ header ul li a{
     justify-content: space-evenly
 }
 
+/* 소개글 글자 글로우 현상 */
+.dig{
+        /* 그림자를 이용한 Glow 효과 */
+        text-shadow: 0 0 4px rgb(0, 255, 34);
+        /* 애니메이션: 이시이지반방마 */
+        animation: titAni1 .5s ease-in infinite alternate;
+}
+
+/* 타이틀 글로우 효과 애니메이션 키프레임 */
+@keyframes titAni1{
+        to{
+            text-shadow: 0 0 18px rgb(113, 253, 131);
+        }
+}/* 키프레임 */
+
+.fight{
+    /* 그림자를 이용한 Glow 효과 */
+    text-shadow: 0 0 4px rgb(255, 70, 23);
+    /* 애니메이션: 이시이지반방마 */
+    animation: titAni2 .5s ease-in infinite alternate;
+}
+
+/* 타이틀 글로우 효과 애니메이션 키프레임 */
+@keyframes titAni2{
+    to{
+        text-shadow: 0 0 18px rgb(255, 107, 70);
+    }
+}/* 키프레임 */
+
+.build{
+    /* 그림자를 이용한 Glow 효과 */
+    text-shadow: 0 0 4px rgb(255, 166, 0);
+    /* 애니메이션: 이시이지반방마 */
+    animation: titAni3 .5s ease-in infinite alternate;
+}
+
+/* 타이틀 글로우 효과 애니메이션 키프레임 */
+@keyframes titAni3{
+    to{
+        text-shadow: 0 0 18px rgb(255, 195, 84);
+    }
+}/* 키프레임 */
+
+.int p{
+    /* 그림자를 이용한 Glow 효과 */
+    text-shadow: 0 0 4px rgb(0, 26, 255);
+    /* 애니메이션: 이시이지반방마 */
+    animation: titAni4 .5s ease-in infinite alternate;
+}
+
+/* 타이틀 글로우 효과 애니메이션 키프레임 */
+@keyframes titAni4{
+    to{
+        text-shadow: 0 0 18px rgb(85, 102, 255);
+    }
+}/* 키프레임 */
+
+
 /* 글 */
 .gint .word span{
     font-family: 'Sunflower', sans-serif;
