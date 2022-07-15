@@ -185,9 +185,14 @@ header ul li a{
 .relo{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center
 }
 
+/* plus */
+.plus{
+    height: 50px;
+    margin: 0 50px;
+}
 
 /* 내 사진 */
 .me{
