@@ -132,14 +132,92 @@ header ul li a{
 /* 그림 */
 .gint img{
     width: 40vw;
-    height: 45vh;
+    height: 43vh;
     border-radius: 10px;
     object-fit: cover;
 }
 
 /* gif 보더 */
 .pic1{
-    border: 5px solid red;
+    border: 1vh solid lightgreen;
+    background-color: lightgreen;
+    box-sizing: border-box;
     border-radius: 15px;
+    height: 45vh;
 }
+.pic2{
+    border: 1vh solid lightskyblue;
+    background-color: lightskyblue;
+    box-sizing: border-box;
+    border-radius: 15px;
+    height: 45vh;
+}
+.pic3{
+    border: 1vh solid hotpink;
+    background-color: hotpink;
+    box-sizing: border-box;
+    border-radius: 15px;
+    height: 45vh;
+}
+.pic4{
+    border: 1vh solid lightcoral;
+    background-color: lightcoral;
+    box-sizing: border-box;
+    border-radius: 15px;
+    height: 45vh;
+}
+
+/* 직업소개 */
+.job{
+    margin-top: 100px;
+    display: flex;
+
+}
+
+
+/* 회사랑 내 소개 */
+.rint{
+    width: 100%;
+}
+
+
+/* 리로직 로고 */
+.relo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* 내 사진 */
+.me{
+
+}
+
+
+
+/* 푸터 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
