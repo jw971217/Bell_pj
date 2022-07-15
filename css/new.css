@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 /* 공사중 */
 *{
     outline: 1px dashed hotpink;
@@ -41,8 +41,167 @@ header ul li a{
     display: block;
     padding: 0 15px;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
+
+
+
+
+
+
+.gnb {
+    z-index: 999;
+    /* 포지션이 있어야 z-index적용됨.
+    gnb 하위메뉴가 위에 오도록 z-index를 높인다.
+    */
+    /* 트랜지션:속시이지 */
+    transition: .3s; 
+  }
+
+  /* GNB 오버시 나올 전체 배경 가상요소 */
+  .gnb::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    /* left,top의 부모는? .gnb */
+    height: 0; /* 170px -> 오버시 */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* 트랜지션 */
+    transition: 0.3s;
+  }
+
+  /* GNB 오버시 가상요소 보이기 */
+  .gnb:hover::after{
+    height: 200px;
+  }
+
+  /* ul 초기화 */
+  .gnb ul {
+    width: 750px;
+    margin: 0 auto;
+  }
+  
+  /* 가상요소로 clear설정하기 */
+  .gnb ul::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  /* 상위 li 리스트요소 */
+  .gnb>ul>li{
+    float: left;
+    width: 150px;
+    text-align: center;
+  }
+  
+  /* li 하위 a요소 */
+  .gnb>ul>li>a{
+    /* a요소 확장 */
+    width: 100%;
+    height: 100%;
+    /* 트랜지션:속시이지 */
+    transition: .3s; 
+  }
+
+  /* 상단 메뉴 글자에 밑줄 애니 */
+  .gnb>ul>li>a>span{
+    position: relative;
+    /* 부모자격 */
+  }
+
+  /* 가상요소로 밑줄 */
+  .gnb>ul>li>a>span::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    /* 부모는? 싸고있는 span */
+    width: 0%; /* 마우스 오버시 100% */
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    /* 트랜지션: 속시이지 - 돌아올 때 지연시간 없음 */
+    transition: width .1s ease-out;
+  }
+
+  /* 상위메뉴 오버시 가상요소 밑줄애니 */
+  .gnb>ul>li:hover>a>span::after{
+    width: 100%;
+    /* 오버시에 기다리는 시간 없애기 */
+    transition-delay: .3s;
+  }
+
+  /* 서브메뉴 */
+  .smenu{
+    position: absolute;
+    width: 150px;
+    /* 서브메뉴박스 숨기기 */
+    height: 0; /* 1 */
+    overflow: hidden; /* 2 */
+    /* 주의사항 : 높이값 0으로 숨기는 박스는 위아래 패딩, 보더는
+    숨겨지지 않으므로 쓰지 않는다
+    디자인은 하위요소에서 할것 */
+    /* 트랜지션 */
+    transition: 0.3s;
+    /* 가상요소 배경보다 위 */
+    z-index: 1;
+  }
+
+  /* 상위메뉴 li 오버시 서브메뉴 보이기 */
+  .gnb:hover>ul>li .smenu{
+    height: 200px;
+  }
+
+  /* 서브메뉴 ol */
+  .smenu ol{
+    padding: 15px;
+    padding-top: 0;
+  }
+  /*서브메뉴 li */
+  .smenu li{
+  }
+
+  .smenu a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    text-decoration: none;
+    line-height: 35px;
+    /* 트랜지션 */
+    transition: 0.2s;
+  }
+
+  /* 서브메뉴 오버시 글자에 밑줄 애니 */
+  .smenu>ol>li>a>span{
+    position: relative;
+    /* 부모자격 */
+  }
+
+  /* 가상요소로 밑줄 */
+  .smenu>ol>li>a>span::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    /* 부모는? 싸고있는 span */
+    width: 0%; /* 마우스 오버시 100% */
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    /* 트랜지션: 속시이지 - 돌아올 때 지연시간 없음 */
+    transition: width .2s ease-out;
+  }
+
+  /* 상위메뉴 오버시 가상요소 밑줄애니 */
+  .smenu>ol>li:hover>a>span::after{
+    width: 100%;
+    /* 오버시에 기다리는 시간 없애기 */
+    transition-delay: .3s;
+  }
 
 /* 상단 메뉴 글자에 밑줄 애니 */
 .head>ul>li>a>span{
@@ -96,7 +255,7 @@ header ul li a{
 /* re-logic */
 .cont .int p{
     padding: 1vh;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     margin-top: 2vh;
 }
@@ -166,6 +325,7 @@ header ul li a{
     text-shadow: 0 0 4px rgb(0, 26, 255);
     /* 애니메이션: 이시이지반방마 */
     animation: titAni4 .5s ease-in infinite alternate;
+    font-family: 'Press Start 2P', cursive;
 }
 
 /* 타이틀 글로우 효과 애니메이션 키프레임 */
@@ -260,9 +420,20 @@ header ul li a{
 
 
 /* 푸터 */
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(39, 39, 39);
+}
 
+.info ul{
+    display: flex;
+    justify-content: space-evenly;
+}
 
-
+address{
+    text-align: center;
+}
 
 
 
