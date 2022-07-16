@@ -2,14 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 /* 공사중 */
 *{
     /* outline: 1px dashed hotpink;
     box-sizing: border-box; */
 }
-
-
-
 
 html{
     font-size: 10px;
@@ -43,11 +41,6 @@ header ul li a{
     font-weight: bold;
     font-size: 1.3rem;
 }
-
-
-
-
-
 
 .gnb {
     z-index: 999;
@@ -132,7 +125,7 @@ header ul li a{
   .gnb>ul>li:hover>a>span::after{
     width: 100%;
     /* 오버시에 기다리는 시간 없애기 */
-    transition-delay: .3s;
+    transition-delay: .1s;
   }
 
   /* 서브메뉴 */
@@ -146,7 +139,7 @@ header ul li a{
     숨겨지지 않으므로 쓰지 않는다
     디자인은 하위요소에서 할것 */
     /* 트랜지션 */
-    transition: 0.3s;
+    transition: 0.2s;
     /* 가상요소 배경보다 위 */
     z-index: 1;
   }
@@ -201,7 +194,7 @@ header ul li a{
   .smenu>ol>li:hover>a>span::after{
     width: 100%;
     /* 오버시에 기다리는 시간 없애기 */
-    transition-delay: .3s;
+    transition-delay: .1s;
   }
 
 /* 상단 메뉴 글자에 밑줄 애니 */
@@ -230,6 +223,51 @@ header ul li a{
     width: 100%;
     /* 오버시에 기다리는 시간 0.4초 */
     transition: 0.3s ease-out;
+  }
+
+  /* 언어선택영어 */
+  .lang{
+    display: flex;
+    height: 4.3vh;
+    line-height: 4.3vh;
+    position: relative;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    border: 2px solid #000;
+  }
+  
+  .lan{
+    height: 4.1vh;
+
+  }
+
+  .lan a{
+    padding: 0 15px;
+    display: block;
+    color: rgb(0, 0, 0);
+    transition: .3s;
+    
+  }
+
+  .eng a{
+    border-radius: 50px 0 0 50px;
+  }
+
+  .chi a{
+    border-radius: 0 50px 50px 0;
+  }
+  
+  .kor{
+    border-right: 1px solid rgb(39, 39, 39);
+    border-left: 1px solid rgb(39, 39, 39);
+  }
+
+  .lan a:hover{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
   }
 
 /* 메인영역 시작 */
@@ -264,16 +302,16 @@ header ul li a{
 /* 라인 */
 .line{
     width: 2px;
-    height: 6vh;
+    height: 8vh;
     background-color:#000;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 /* 소개글 */
 .gint{
     display: flex;
-    margin-top: 100px;
+    margin-top: 80px;
     align-items: center;
     justify-content: space-evenly
 }
@@ -283,7 +321,7 @@ header ul li a{
         /* 그림자를 이용한 Glow 효과 */
         text-shadow: 0 0 4px rgb(0, 255, 34);
         /* 애니메이션: 이시이지반방마 */
-        animation: titAni1 .6s ease-in infinite alternate;
+        animation: titAni1 1s ease-in infinite alternate;
 }
 
 /* 타이틀 글로우 효과 애니메이션 키프레임 */
@@ -297,7 +335,7 @@ header ul li a{
     /* 그림자를 이용한 Glow 효과 */
     text-shadow: 0 0 4px rgb(255, 70, 23);
     /* 애니메이션: 이시이지반방마 */
-    animation: titAni2 .6s ease-in .3s infinite alternate;
+    animation: titAni2 1s ease-in .8s infinite alternate;
 }
 
 /* 타이틀 글로우 효과 애니메이션 키프레임 */
@@ -311,13 +349,13 @@ header ul li a{
     /* 그림자를 이용한 Glow 효과 */
     text-shadow: 0 0 4px rgb(255, 166, 0);
     /* 애니메이션: 이시이지반방마 */
-    animation: titAni3 .6s ease-in .6s infinite alternate;
+    animation: titAni3 1s ease-in 1.6s infinite alternate;
 }
 
 /* 타이틀 글로우 효과 애니메이션 키프레임 */
 @keyframes titAni3{
     to{
-        text-shadow: 0 0 18px rgb(255, 195, 84);
+        text-shadow: 0 0 18px rgb(255, 162, 0);
     }
 }/* 키프레임 */
 
@@ -387,11 +425,107 @@ header ul li a{
 }
 
 /* 직업소개 */
-.job{
-    margin-top: 100px;
-    display: flex;
-
+/* 선택 문장 */
+.your{
+  width: 100%;
+  height: 20vh;
+  background-color: rgb(201, 77, 77);
+  margin-top: 150px;
 }
+
+.your span{
+  text-align: center;
+  line-height: 20vh;
+  font-size: 12vh;
+  font-family: 'Teko', sans-serif;
+}
+
+
+
+
+
+
+
+@keyframes anime_textup { 0% { top: 0; } 20% { top: -0.2rem; } 40% { top: 0 } 60% { top: 0 } 80% { top: 0 } 100% { top: 0 } }
+ 
+.test_obj span {
+    position: relative;
+    animation: anime_textup 3s infinite;
+}
+
+.test_obj span:nth-of-type(1) {
+    animation-delay: .1s;
+}
+
+.test_obj span:nth-of-type(2) {
+    animation-delay: .2s;
+}
+
+.test_obj span:nth-of-type(3) {
+    animation-delay: .3s;
+}
+
+.test_obj span:nth-of-type(4) {
+    animation-delay: .4s;
+}
+
+.test_obj span:nth-of-type(5) {
+    animation-delay: .5s;
+}
+.test_obj span:nth-of-type(6) {
+    animation-delay: .6s;
+}
+.test_obj span:nth-of-type(7) {
+    animation-delay: .7s;
+}
+.test_obj span:nth-of-type(8) {
+    animation-delay: .8s;
+}
+.test_obj span:nth-of-type(9) {
+    animation-delay: .9s;
+}
+.test_obj span:nth-of-type(10) {
+    animation-delay: .10s;
+}
+.test_obj span:nth-of-type(11) {
+    animation-delay: .11s;
+}
+.test_obj span:nth-of-type(12) {
+    animation-delay: .12s;
+}
+.test_obj span:nth-of-type(13) {
+    animation-delay: .13s;
+}
+.test_obj span:nth-of-type(14) {
+    animation-delay: .14s;
+}
+.test_obj span:nth-of-type(15) {
+    animation-delay: .15s;
+}
+.test_obj span:nth-of-type(16) {
+    animation-delay: .16s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.job{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  }
 
 
 /* 회사랑 내 소개 */
@@ -449,7 +583,7 @@ header ul li a{
 .info img{
   position: relative;
   left: 50%;
-  bottom: -50px;
+  bottom: -65px;
   transform: translateX(-50%);
 }
 
@@ -458,10 +592,12 @@ header ul li a{
 address{
   color: #fff;
     text-align: center;
-    transform: translateY(100px);
-}
-
-
+    transform: translateY(110px);
+  }
+  
+  address span{
+  font-size: 0.7rem;
+  }
 
 
 
