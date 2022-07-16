@@ -439,6 +439,7 @@ header ul li a{
   line-height: 20vh;
   font-size: 12vh;
   font-family: 'Teko', sans-serif;
+  text-shadow: 2px 2px 2px rgb(37, 37, 37);
 }
 
 /* 글자가 파도치는 애니메이션 */
@@ -562,6 +563,7 @@ header ul li a{
   font-size: 12vh;
   font-family: 'Teko', sans-serif;
   color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 2px rgb(37, 37, 37);
 }
 
 
@@ -635,7 +637,10 @@ header ul li a{
     }
   }
 
-
+.boss1 img{
+  width: 40vw;
+  height: 25vh;
+}
 
 
 
