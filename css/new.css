@@ -518,16 +518,10 @@ header ul li a{
   height: 340px;
 }
 
-/* 카드 설명 div */
-.card span{
-  width: 260px;
-  height: 340px;
-  font-family: 'Great Vibes', cursive;
-  font-weight: bold;
-  font-size: 2.5rem;
-  position: relative;
-  top: 10px;
-}
+/* 두번쨰 이미지 상하 위치 조정 */
+.toss img:last-child[
+  align-items: flex-start;
+]
 
 /* 1. 위 처음상태(돌아옴) */
 /* Y축 0도로 돌아옴 - 0.3초 기다림 */
