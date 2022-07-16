@@ -585,7 +585,7 @@ header ul li a{
   font-family: 'Bebas Neue', cursive;
   position: relative; 
   width: 100vw;
-  min-width: 100vw;
+  min-width: 100%;
   height: auto; 
   padding:2rem 0; 
   line-height: 5.5rem;
@@ -639,7 +639,7 @@ header ul li a{
 
 .boss1 img{
   width: 40vw;
-  height: 25vh;
+  height: 40vh;
 }
 
 
@@ -662,6 +662,7 @@ header ul li a{
 /* 회사랑 내 소개 */
 .rint{
     width: 100%;
+    margin-top: 80vh;
 }
 
 
