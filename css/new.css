@@ -642,9 +642,13 @@ header ul li a{
   height: 40vh;
 }
 
+.boss2 img{
 
+}
 
+.boss3 video{
 
+}
 
 
 
@@ -795,6 +799,13 @@ header ul li a{
 
 
 
+
+
+
+
+
+
+
 /* 벨 공전 애니메이션 */
 .outer{
   position: relative;
@@ -808,12 +819,12 @@ header ul li a{
   animation: forwardRotate 5s linear infinite; 
   width: 10px;
   height: 10px;
-  top: 30%; left: 30%;
 }
 
 
 .bell, .bell span{
   animation: reverseRotate 5s linear infinite; 
+  transform-origin: bottom -50px;
 }
 
 .bell span{
@@ -831,14 +842,6 @@ header ul li a{
   from { transform: rotate(0deg); }
   to { transform: rotate(-360deg); }
 }
-
-
-
-
-
-
-
-
 
 
 
