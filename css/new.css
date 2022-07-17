@@ -595,6 +595,7 @@ header ul li a{
   border-top: 0.5rem solid red;
   border-bottom: 0.5rem solid red;
   box-shadow: 2px 2px 10px;
+  z-index: 2;
 }
 
 .animated-title1{
@@ -640,14 +641,15 @@ header ul li a{
 .boss1 img{
   width: 40vw;
   height: 40vh;
+  position: absolute;
 }
 
 .boss2 img{
-
+  position: absolute;
 }
 
 .boss3 video{
-
+  position: absolute;
 }
 
 
