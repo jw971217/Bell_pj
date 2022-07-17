@@ -646,9 +646,13 @@ header ul li a{
 
 .boss2 img{
   position: absolute;
+  width: 40vw;
+  height: 40vh;
 }
 
 .boss3 video{
+  width: 40vw;
+  height: 40vh;
   position: absolute;
 }
 
