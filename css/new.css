@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 /* 공사중 */
 *{
     /* outline: 1px dashed hotpink;
@@ -13,6 +14,12 @@
 
 html{
     font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+/* 스크롤바 설정 */
+.scrollBar::-webkit-scrollbar {
+    width: 0px;
 }
 
 /* 헤더 영역 */
@@ -30,6 +37,11 @@ html{
 /* 로고 */
 header h1 img{
     height: 5vh;
+}
+
+header h1{
+  position: relative;
+  left: 10px;
 }
 
 /* 네비게이션 */
@@ -228,13 +240,14 @@ header ul li a{
     transition: 0.3s ease-out;
   }
 
-  /* 언어선택영어 */
+  /* 언어선택영역 */
   .lang{
     display: flex;
-    height: 4.3vh;
-    line-height: 4.3vh;
+    height: 3vh;
+    line-height: 3vh;
     position: relative;
     top: 50%;
+    right: 10px;
     transform: translateY(-50%);
     background-color: rgb(255, 255, 255);
     border-radius: 50px;
@@ -242,7 +255,7 @@ header ul li a{
   }
   
   .lan{
-    height: 4.1vh;
+    height: 3vh;
 
   }
 
@@ -251,7 +264,7 @@ header ul li a{
     display: block;
     color: rgb(0, 0, 0);
     transition: .3s;
-    
+    font-weight: bold;
   }
 
   .eng a{
@@ -267,9 +280,19 @@ header ul li a{
     border-left: 1px solid rgb(39, 39, 39);
   }
 
-  .lan a:hover{
+  .eng a:hover{
+    background-color: #0907a6;
+    color: #f60100;
+  }
+
+  .kor a:hover{
     background-color: rgb(0, 0, 0);
     color: #fff;
+  }
+
+  .chi a:hover{
+    background-color: rgb(255, 0, 0);
+    color: yellow;
   }
 
 /* 메인영역 시작 */
@@ -315,7 +338,7 @@ header ul li a{
     display: flex;
     margin-top: 80px;
     align-items: center;
-    justify-content: space-evenly
+    justify-content: space-evenly;
 }
 
 /* 소개글 글자 글로우 현상 */
@@ -389,6 +412,12 @@ header ul li a{
 }
 
 /* 그림 */
+.gint .pic{
+  width: 41vw;
+  height: 45vh;
+  transition: .3s;
+}
+
 .gint img{
     width: 40vw;
     height: 43vh;
@@ -404,6 +433,12 @@ header ul li a{
     border-radius: 15px;
     height: 45vh;
 }
+
+.pic1:hover{
+  border: 1vh solid rgb(63, 215, 63);
+  background-color: rgb(63, 215, 63);
+}
+
 .pic2{
     border: 1vh solid lightskyblue;
     background-color: lightskyblue;
@@ -411,6 +446,12 @@ header ul li a{
     border-radius: 15px;
     height: 45vh;
 }
+
+.pic2:hover{
+  border: 1vh solid rgb(53, 178, 227);
+  background-color: rgb(53, 178, 227);
+}
+
 .pic3{
     border: 1vh solid hotpink;
     background-color: hotpink;
@@ -418,12 +459,23 @@ header ul li a{
     border-radius: 15px;
     height: 45vh;
 }
+
+.pic3:hover{
+  border: 1vh solid rgb(255, 55, 155);
+  background-color: rgb(255, 55, 155);
+}
+
 .pic4{
     border: 1vh solid lightcoral;
     background-color: lightcoral;
     box-sizing: border-box;
     border-radius: 15px;
     height: 45vh;
+}
+
+.pic4:hover{
+  border: 1vh solid rgb(255, 116, 65);
+  background-color: rgb(255, 116, 65);
 }
 
 /* 직업소개 */
@@ -439,7 +491,7 @@ header ul li a{
   line-height: 20vh;
   font-size: 12vh;
   font-family: 'Teko', sans-serif;
-  text-shadow: 1px 1px 1px rgb(76, 197, 20);
+  text-shadow: 1px 1px 1px rgb(255, 255, 0);
 }
 
 /* 글자가 파도치는 애니메이션 */
@@ -645,6 +697,8 @@ header ul li a{
   width: 40vw;
   height: 43vh;
   position: relative;
+  border-radius: 15px;
+  object-fit: fill;
 }
 
 .boss1 img{
@@ -654,7 +708,7 @@ header ul li a{
 
 .boss2 video{
   position: absolute;
-  top: 45vh;
+  top: 43vh;
   right: 3vw;
 }
 
@@ -910,14 +964,39 @@ address{
   font-size: 0.7rem;
   }
 
+/* top */
+.container {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
 
+a.button {
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  text-align: center;
+  line-height: 60px;
+  color: #FFF;
+  border-radius: 50%;
+  transition: all 0.2s ;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 
+.btngreen {
+  background: #54c944;
+}
 
+.btngreen.btnBorder {
+  box-shadow: 0px 0px 0px 0px #eeff00;
+}
 
-
-
-
-
+.btngreen.btnBorder:hover {
+  box-shadow: 0px 0px 0px 5px #0a6500;
+}
 
 
 
