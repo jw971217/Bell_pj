@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 /* 공사중 */
 *{
@@ -31,7 +32,9 @@ html{
    width: 10px;
 } */
 
-
+body{
+  overflow-x: hidden
+}
 
 
 
@@ -651,19 +654,6 @@ header ul li a{
 
 
 
-
-
-
-
-
-
-/* 보스 소개 */
-.boss{
-  width: 100%;
-  margin-top: 30vh;
-  position: relative;
-}
-
 /* WARNING! 부분 */
 .animated-title {
   font-size:3rem; 
@@ -684,32 +674,33 @@ header ul li a{
 } 
 
 .track{
-  width: 100%;
+  width: 150%;
+  position: absolute;
 }
 
 .content{
-  width: 120%;
+  width: 100%;
 }
 
 .animated-title1{
   transform: rotate(-30deg);
-  top: -980px;
+  top: -850px;
   left: -200px;
-  }  
+}  
 
 .animated-title2{
   transform: rotate(15deg);
   margin-top: -10vh;
   left: -200px;
-  top: -480px;
+  top: -450px;
   }  
 
-.animated-title1 .track {
-  position: absolute; 
+  .animated-title1 .track {
+    position: absolute; 
   white-space: nowrap;
   will-change: transform;
   animation: marquee1 15s linear infinite;
-  }
+}
 
 .animated-title2 .track {
   position: absolute; 
@@ -717,7 +708,7 @@ header ul li a{
   will-change: transform;
   animation: marquee2 15s linear infinite;
   }
-
+  
 @keyframes marquee1 {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
@@ -729,20 +720,26 @@ header ul li a{
 }
 
 @media (hover: hover) and (min-width: 700px){
-.animated-title .content {
+  .animated-title .content {
     -webkit-transform: translateY(calc(100% - 8rem)); 
     transform: translateY(calc(100% - 8rem));
     }
   }
-
-
-
-
-
-
-
+  
+  
+  
+  
+  
+  
+  /* 보스 소개 */
+  .boss{
+    width: 100%;
+    margin-top: 30vh;
+    position: relative;
+  }
+  
   /* 보스 이미지 영역 */
-.boss1 img, .boss2 video , .boss3 img{
+  .boss1 img, .boss2 video , .boss3 img{
   width: 40vw;
   height: 43vh;
   position: relative;
@@ -756,11 +753,12 @@ header ul li a{
 .boss1, .boss2, .boss3{
   height: 48vh;
   box-shadow: inset 2px 2px 5px rgb(31, 31, 31);
+  transition: 1s;
 }
 
 .boss1{
   background-color: rgb(26, 175, 12);
-  
+  position: relative;
 }
 
 .boss1 img{
@@ -769,7 +767,7 @@ header ul li a{
   background-color: rgb(255, 251, 0);
 }
 
-.boss1 :hover{
+.boss1 img:hover{
   border: 1vh solid rgb(234, 0, 255);
   background-color: rgb(234, 0, 255);
 }
@@ -792,7 +790,7 @@ header ul li a{
 }
 
 .boss3{
-  background-color: rgb(175, 12, 102);
+  background-color: rgb(227, 144, 0);
   position: relative;
 }
 
@@ -807,13 +805,49 @@ header ul li a{
   background-color: rgb(255, 251, 0);
 }
 
+/* 보스 이미지 글귀 */
+.boss1>span, .boss2>span, .boss3>span, .boss>.good{
+  font-size: 6.5vw;
+  font-family: 'Special Elite', cursive;
+  font-weight: bold;
+  position: absolute;
+  line-height: 48vh;
 
+}
 
+.boss1 span{
+  right: 2vw;
+}
 
+.boss2 span{
+left: 18vw;
+}
 
+.boss3 span{
+right: 13vw;
+}
 
+.boss .good{
+  font-size: 9vw;
+  background-color: red;
+  width: 100%;
+  text-align: center;
+  transition: 1s;
+}
 
+.boss1:hover, .boss2:hover, .boss3:hover, .good:hover{
+  z-index: 9999;
+  color: red;
+  text-shadow: 4px 4px 4px #000;
+}
 
+.good:hover{
+  background-color: #000;
+}
+
+.boss1:hover{
+  z-index: 9999 !important;
+}
 
 
 
@@ -823,8 +857,8 @@ header ul li a{
 /* 회사랑 내 소개 */
 .rint{
     width: 100%;
-    margin-top: 19vh;
-    margin-bottom: 10vh;
+    margin-top: 60vh;
+    height: 50vh;
 }
 
 .rint .pro{
@@ -847,7 +881,8 @@ header ul li a{
 .relo{
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    height: 50vh;
 }
 
 /* plus */
@@ -1003,9 +1038,23 @@ header ul li a{
   to { transform: rotate(360deg) translateX(10px) rotate(-360deg); }
 }
 
+/* 슬라임 */
+.slime1{
+  position: absolute;
+  height: 200px;
+  bottom: -20vh;
+  left: 5vw;
+}
+.slime2{
+  position: absolute;
+  height: 44px;
+  bottom: -20.5vh;
+  right: 8vw;
+}
 
-
-
+.rint{
+  position: relative;
+}
 
 
 
@@ -1018,6 +1067,7 @@ header ul li a{
     height: 200px;
     background-color: rgb(39, 39, 39);
     position: absolute;
+    margin-top: 20vh;
 }
 
 /* 하단 네비 */
@@ -1064,7 +1114,7 @@ address{
 .sns{
   position: absolute;
   top: 140px;
-  right: 10vw;
+  right: 6vw;
   /* 플렉스박스 */
   display: flex;
 }
@@ -1109,7 +1159,7 @@ address{
   position: fixed;
   right: 10px;
   bottom: 60px;
-  z-index: 99;
+  z-index: 999999;
 }
 
 a.button1 {
@@ -1145,7 +1195,7 @@ a.button1 {
   position: fixed;
   right: 10px;
   bottom: 10px;
-  z-index: 99;
+  z-index: 999999;
 }
 
 a.button2 {
