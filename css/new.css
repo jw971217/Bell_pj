@@ -1044,19 +1044,28 @@ right: 13vw;
   height: 200px;
   bottom: -20vh;
   left: 5vw;
+  animation: sliAni .3s linear infinite alternate;
 }
 .slime2{
   position: absolute;
   height: 44px;
   bottom: -20.5vh;
   right: 8vw;
+  animation: sliAni .3s linear 1s infinite alternate;
 }
 
 .rint{
   position: relative;
 }
 
-
+@keyframes sliAni {
+  from{
+    transform: translateY(0%);
+  }
+  to{
+    transform: translateY(-15%);
+  }
+}
 
 
 
