@@ -439,6 +439,10 @@ header ul li a{
   background-color: rgb(63, 215, 63);
 }
 
+.word1{
+  text-shadow: 1px 1px 1px lightgreen;
+}
+
 .pic2{
     border: 1vh solid lightskyblue;
     background-color: lightskyblue;
@@ -450,6 +454,10 @@ header ul li a{
 .pic2:hover{
   border: 1vh solid rgb(53, 178, 227);
   background-color: rgb(53, 178, 227);
+}
+
+.word2{
+  text-shadow: 1px 1px 1px lightskyblue;
 }
 
 .pic3{
@@ -465,6 +473,10 @@ header ul li a{
   background-color: rgb(255, 55, 155);
 }
 
+.word3{
+  text-shadow: 1px 1px 1px hotpink;
+}
+
 .pic4{
     border: 1vh solid lightcoral;
     background-color: lightcoral;
@@ -476,6 +488,10 @@ header ul li a{
 .pic4:hover{
   border: 1vh solid rgb(255, 116, 65);
   background-color: rgb(255, 116, 65);
+}
+
+.word4{
+  text-shadow: 1px 1px 1px lightcoral;
 }
 
 /* 직업소개 */
@@ -733,9 +749,17 @@ header ul li a{
 /* 회사랑 내 소개 */
 .rint{
     width: 100%;
-    margin-top: 80vh;
+    margin-top: 30vh;
+    margin-bottom: 10vh;
 }
 
+.rint .pro span{
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin-bottom: 10vh;
+}
 
 /* 리로직 로고 */
 .relo{
@@ -864,15 +888,6 @@ header ul li a{
   position: relative;
 }
 
-
-
-
-
-
-
-
-
-
 /* 벨 공전 애니메이션 */
 .outer{
   position: relative;
@@ -883,31 +898,27 @@ header ul li a{
 
 .satellite_box{
   position: absolute; 
-  animation: forwardRotate 5s linear infinite; 
-  width: 10px;
-  height: 10px;
+  animation: forwardRotate 1s linear infinite; 
+    top: -69px;
+    left: -112px;
+}
+.bell{
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-
-.bell, .bell span{
-  animation: reverseRotate 5s linear infinite; 
-  transform-origin: bottom -50px;
-}
-
-.bell span{
-  font-size: 3rem;
-  color: #000;
-  font-weight: bold;
+.satellite_box span{
+  font-size: 2rem;
   position: relative;
+  font-weight: bold;
+  left: 75px;
+  bottom: -119px;
 }
 
 @keyframes forwardRotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-@keyframes reverseRotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(-360deg); }
+  from { transform: rotate(0deg) translateX(10px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(10px) rotate(-360deg); }
 }
 
 
