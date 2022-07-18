@@ -596,7 +596,7 @@ header ul li a{
 /* 2. 위 오버상태 */
 /* Y축 90도회전 - 회전후 안보임*/
 #trans10:hover img:last-child {
-  transform: rotateY(90deg);
+  transform: rotateY(-90deg);
   transition: transform 0.3s ease-in;
 }
 /* 3. 뒷 처음상태(돌아옴) */
