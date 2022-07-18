@@ -967,8 +967,9 @@ address{
 /* top */
 .container1 {
   position: fixed;
-  right: 30px;
+  right: 10px;
   bottom: 60px;
+  z-index: 99;
 }
 
 a.button1 {
@@ -1002,8 +1003,9 @@ a.button1 {
 /* bottom */
 .container2 {
   position: fixed;
-  right: 30px;
+  right: 10px;
   bottom: 10px;
+  z-index: 99;
 }
 
 a.button2 {
