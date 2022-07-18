@@ -717,15 +717,30 @@ header ul li a{
   object-fit: fill;
 }
 
+.boss1{
+  background-color: rgb(26, 175, 12);
+  
+}
+
 .boss1 img{
   top: 0vh;
   left: 3vw;
+}
+
+.boss2{
+  background-color: rgb(12, 110, 175);
+  
 }
 
 .boss2 video{
   position: absolute;
   top: 43vh;
   right: 3vw;
+}
+
+.boss3{
+  background-color: rgb(12, 110, 175);
+  
 }
 
 .boss3 img{
