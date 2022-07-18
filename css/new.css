@@ -19,8 +19,22 @@ html{
 
 /* 스크롤바 설정 */
 .scrollBar::-webkit-scrollbar {
-    width: 0px;
+  width: 0px;
 }
+
+/* .scrollBar::-webkit-scrollbar-thumb{
+    background-color: #2f3542;
+} */
+
+/* .scrollBar::-webkit-scrollbar-track{
+   background-color: rgba(128, 128, 128, 0);
+   width: 10px;
+} */
+
+
+
+
+
 
 /* 헤더 영역 */
 .head{
@@ -654,9 +668,9 @@ header ul li a{
 .animated-title {
   font-size:3rem; 
   font-family: 'Bebas Neue', cursive;
-  position: absolute; 
-  width: 100vh;
-  min-width: 100%;
+  position: relative; 
+  width: 140%;
+  /* min-width: 100%; */
   height: auto; 
   padding:2rem 0; 
   line-height: 5.5rem;
@@ -669,27 +683,39 @@ header ul li a{
   z-index: 5;
 } 
 
+.track{
+  width: 100%;
+}
+
+.content{
+  width: 120%;
+}
+
 .animated-title1{
-  transform: rotate(-20deg);
+  transform: rotate(-30deg);
+  top: -980px;
+  left: -200px;
   }  
 
 .animated-title2{
-  transform: rotate(10deg);
+  transform: rotate(15deg);
   margin-top: -10vh;
+  left: -200px;
+  top: -480px;
   }  
 
 .animated-title1 .track {
   position: absolute; 
   white-space: nowrap;
   will-change: transform;
-  animation: marquee1 60s linear infinite;
+  animation: marquee1 15s linear infinite;
   }
 
 .animated-title2 .track {
   position: absolute; 
   white-space: nowrap;
   will-change: transform;
-  animation: marquee2 60s linear infinite;
+  animation: marquee2 15s linear infinite;
   }
 
 @keyframes marquee1 {
@@ -722,20 +748,30 @@ header ul li a{
   position: relative;
   border-radius: 15px;
   object-fit: fill;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .3s;
 }
 
 .boss1, .boss2, .boss3{
-  height: 47vh;
+  height: 48vh;
+  box-shadow: inset 2px 2px 5px rgb(31, 31, 31);
 }
 
 .boss1{
   background-color: rgb(26, 175, 12);
-
+  
 }
 
 .boss1 img{
-  top: 2vh;
   left: 3vw;
+  border: 1vh solid rgb(255, 251, 0);
+  background-color: rgb(255, 251, 0);
+}
+
+.boss1 :hover{
+  border: 1vh solid rgb(234, 0, 255);
+  background-color: rgb(234, 0, 255);
 }
 
 .boss2{
@@ -745,19 +781,30 @@ header ul li a{
 
 .boss2 video{
   position: absolute;
-  top: 2vh;
   right: 3vw;
+  border: 1vh solid rgb(234, 0, 255);
+  background-color: rgb(234, 0, 255);
+}
+
+.boss2 video:hover{
+  border: 1vh solid rgb(0, 183, 255);
+  background-color: rgb(0, 183, 255);
 }
 
 .boss3{
   background-color: rgb(175, 12, 102);
   position: relative;
-  
 }
 
 .boss3 img{
-  top: 2vh;
   left: 3vw;
+  border: 1vh solid rgb(0, 183, 255);
+  background-color: rgb(0, 183, 255);
+}
+
+.boss3 img:hover{
+  border: 1vh solid rgb(255, 251, 0);
+  background-color: rgb(255, 251, 0);
 }
 
 
@@ -776,8 +823,14 @@ header ul li a{
 /* 회사랑 내 소개 */
 .rint{
     width: 100%;
-    margin-top: 30vh;
+    margin-top: 19vh;
     margin-bottom: 10vh;
+}
+
+.rint .pro{
+  width: 100%;
+  height: 20vh;
+  background-color: #000;
 }
 
 .rint .pro span{
@@ -786,6 +839,8 @@ header ul li a{
   text-align: center;
   display: block;
   margin-bottom: 10vh;
+  color: #fff;
+  line-height: 20vh;
 }
 
 /* 리로직 로고 */
@@ -1041,7 +1096,7 @@ address{
 }
 /* 인스타 */
 .sns li:nth-child(3){
-  background-position: -594px -430px;
+  background-position: -592px -429px;
 }
 
 
