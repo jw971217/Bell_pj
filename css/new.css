@@ -924,6 +924,7 @@ header ul li a{
     width: 100%;
     height: 200px;
     background-color: rgb(39, 39, 39);
+    position: absolute;
 }
 
 /* 하단 네비 */
@@ -952,7 +953,6 @@ header ul li a{
   transform: translateX(-50%);
 }
 
-
 /* 어드레스 */
 address{
   color: #fff;
@@ -963,6 +963,53 @@ address{
   address span{
   font-size: 0.7rem;
   }
+
+
+
+
+/* sns */
+.sns{
+  position: absolute;
+  top: 140px;
+  right: 10vw;
+  /* 플렉스박스 */
+  display: flex;
+}
+
+.sns li{
+  width: 34px;
+  height: 34px;
+  background: url(../발사믹/img/sns.png) no-repeat;
+  margin: 0 2px;
+  /* 필터: 흑백 */
+  filter: grayscale(100%);
+  /* 손가락모양 */
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* 오버시 칼라 */
+.sns li:hover{
+  filter: grayscale(0);
+}
+
+/* 페이스북 */
+.sns li:first-child{
+  background-position: -5px -2px;
+}
+/* 트의터 */
+.sns li:nth-child(2){
+  background-position: -47px -2px;
+}
+/* 인스타 */
+.sns li:nth-child(3){
+  background-position: -89px -2px;
+}
+
+
+
+
+
 
 /* top */
 .container1 {
