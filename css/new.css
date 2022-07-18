@@ -1017,7 +1017,7 @@ address{
 .sns li{
   width: 34px;
   height: 34px;
-  background: url(../발사믹/img/sns.png) no-repeat;
+  background: url(../발사믹/img/sprites_logo.png) no-repeat;
   margin: 0 2px;
   /* 필터: 흑백 */
   filter: grayscale(100%);
@@ -1033,15 +1033,15 @@ address{
 
 /* 페이스북 */
 .sns li:first-child{
-  background-position: -5px -2px;
+  background-position: -509px -430px;
 }
 /* 트의터 */
 .sns li:nth-child(2){
-  background-position: -47px -2px;
+  background-position: -551px -430px;
 }
 /* 인스타 */
 .sns li:nth-child(3){
-  background-position: -89px -2px;
+  background-position: -594px -430px;
 }
 
 
