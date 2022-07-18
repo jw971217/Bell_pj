@@ -435,12 +435,12 @@ header ul li a{
 }
 
 .pic1:hover{
-  border: 1vh solid rgb(63, 215, 63);
-  background-color: rgb(63, 215, 63);
+  border: 1vh solid rgb(47, 163, 47);
+  background-color: rgb(47, 163, 47);
 }
 
 .word1{
-  text-shadow: 1px 1px 1px lightgreen;
+  text-shadow: 2px 2px 2px lightgreen;
 }
 
 .pic2{
@@ -452,12 +452,12 @@ header ul li a{
 }
 
 .pic2:hover{
-  border: 1vh solid rgb(53, 178, 227);
-  background-color: rgb(53, 178, 227);
+  border: 1vh solid rgb(47, 158, 202);
+  background-color: rgb(47, 158, 202);
 }
 
 .word2{
-  text-shadow: 1px 1px 1px lightskyblue;
+  text-shadow: 2px 2px 2px lightskyblue;
 }
 
 .pic3{
@@ -469,12 +469,12 @@ header ul li a{
 }
 
 .pic3:hover{
-  border: 1vh solid rgb(255, 55, 155);
-  background-color: rgb(255, 55, 155);
+  border: 1vh solid rgb(214, 48, 131);
+  background-color: rgb(214, 48, 131);
 }
 
 .word3{
-  text-shadow: 1px 1px 1px hotpink;
+  text-shadow: 2px 2px 2px hotpink;
 }
 
 .pic4{
@@ -486,12 +486,12 @@ header ul li a{
 }
 
 .pic4:hover{
-  border: 1vh solid rgb(255, 116, 65);
-  background-color: rgb(255, 116, 65);
+  border: 1vh solid rgb(233, 109, 64);
+  background-color: rgb(233, 109, 64);
 }
 
 .word4{
-  text-shadow: 1px 1px 1px lightcoral;
+  text-shadow: 2px 2px 2px lightcoral;
 }
 
 /* 직업소개 */
@@ -654,7 +654,7 @@ header ul li a{
 .animated-title {
   font-size:3rem; 
   font-family: 'Bebas Neue', cursive;
-  position: relative; 
+  position: absolute; 
   width: 100vh;
   min-width: 100%;
   height: auto; 
@@ -675,7 +675,7 @@ header ul li a{
 
 .animated-title2{
   transform: rotate(10deg);
-  margin-top: 25vh;
+  margin-top: -10vh;
   }  
 
 .animated-title1 .track {
@@ -709,6 +709,12 @@ header ul li a{
     }
   }
 
+
+
+
+
+
+
   /* 보스 이미지 영역 */
 .boss1 img, .boss2 video , .boss3 img{
   width: 40vw;
@@ -718,34 +724,39 @@ header ul li a{
   object-fit: fill;
 }
 
+.boss1, .boss2, .boss3{
+  height: 47vh;
+}
+
 .boss1{
   background-color: rgb(26, 175, 12);
-  
+
 }
 
 .boss1 img{
-  top: 0vh;
+  top: 2vh;
   left: 3vw;
 }
 
 .boss2{
   background-color: rgb(12, 110, 175);
-  
+  position: relative;
 }
 
 .boss2 video{
   position: absolute;
-  top: 43vh;
+  top: 2vh;
   right: 3vw;
 }
 
 .boss3{
-  background-color: rgb(12, 110, 175);
+  background-color: rgb(175, 12, 102);
+  position: relative;
   
 }
 
 .boss3 img{
-  top: 5vh;
+  top: 2vh;
   left: 3vw;
 }
 
