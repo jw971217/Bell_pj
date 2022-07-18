@@ -576,6 +576,7 @@ header ul li a{
 #trans10{
   width: 260px;
   height: 340px;
+  perspective: 500px;
 }
 /* 2개의 이미지를 겹치게 한다 */
 #trans10 img{
