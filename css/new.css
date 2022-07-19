@@ -381,6 +381,7 @@ header ul li a{
   font-weight: bold;
   font-size: 2rem;
   animation: motionAni 1.2s linear 0s infinite alternate;
+  text-shadow: 5px 5px 4px rgb(134, 134, 134);
 }
 
 
@@ -735,9 +736,8 @@ header ul li a{
 .animated-title {
   font-size:3rem; 
   font-family: 'Bebas Neue', cursive;
-  position: relative; 
+  position: absolute; 
   width: 140%;
-  /* min-width: 100%; */
   height: auto; 
   padding:2rem 0; 
   line-height: 5.5rem;
@@ -748,6 +748,7 @@ header ul li a{
   border-bottom: 0.5rem solid red;
   box-shadow: 2px 2px 10px;
   z-index: 5;
+  transition: 0.3s;
 } 
 
 .track{
@@ -761,15 +762,16 @@ header ul li a{
 
 .animated-title1{
   transform: rotate(-30deg);
-  top: -850px;
+  margin-top: -10vh;
   left: -200px;
+  top: 48vh;
 }  
 
 .animated-title2{
   transform: rotate(15deg);
   margin-top: -10vh;
   left: -200px;
-  top: -450px;
+  top: 99vh;
   }  
 
   .animated-title1 .track {
@@ -889,7 +891,6 @@ header ul li a{
   font-weight: bold;
   position: absolute;
   line-height: 48vh;
-
 }
 
 .boss1 span{
@@ -913,7 +914,6 @@ right: 13vw;
 }
 
 .boss1:hover, .boss2:hover, .boss3:hover, .good:hover{
-  z-index: 9999;
   color: red;
   text-shadow: 4px 4px 4px #000;
 }
@@ -922,10 +922,18 @@ right: 13vw;
   background-color: #000;
 }
 
-.boss1:hover{
-  z-index: 9999 !important;
-}
 
+
+
+.boss .boss1:hover .animated-title1{
+  opacity: 0;
+}
+.boss2:hover .animated-title{
+  opacity: 0;
+}
+.boss3:hover .animated-title2{
+  opacity: 0;
+}
 
 
 
@@ -1147,7 +1155,6 @@ right: 13vw;
 
 /* 눈사람 */
 .snow{
-  height: 20px;
   position: absolute;
   height: 60px;
   bottom: -19.8vh;
@@ -1186,6 +1193,55 @@ right: 13vw;
     transform: rotateY(180deg);
   }
 }
+
+/* 토끼 */
+.rab{
+  position: absolute;
+  height: 45px;
+  bottom: -19.7vh;
+  left: 15vw;
+  animation: rabAni 3.8s linear  infinite;
+}
+
+@keyframes rabAni {
+  0% {
+    left: 15vw;
+    transform: rotateY(180deg);
+  }
+  10% {
+    left: 15vw;
+    transform: rotateY(180deg);
+  }
+
+	20% {
+    left: 17vw;
+    transform: rotateY(180deg);
+  }
+	40% {
+    left: 20vw;
+    transform: rotateY(180deg);
+  }
+	69% {
+    left: 23vw;
+    transform: rotateY(180deg);
+  }
+  69.01%{
+    transform: rotateY(0deg);
+    left: 22vw;
+  }
+
+	80% {
+    left: 20vw;
+    transform: rotateY(0deg);
+  }
+	100% {
+    left: 15vw;
+    transform: rotateY(0deg);
+  }
+}
+
+
+
 
 
 /* 푸터 */
