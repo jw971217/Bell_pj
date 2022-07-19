@@ -376,10 +376,10 @@ header ul li a{
 /* 아래 화살표 */
 .cont .int h3{
   position: absolute;
-  right: 12vw;
-  top: 85vh;
+  right: 15vw;
+  top: 88vh;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 2rem;
   animation: motionAni 1.2s linear 0s infinite alternate;
 }
 
@@ -1132,10 +1132,6 @@ right: 13vw;
   animation-delay: .5s !important;
 }
 
-.rint{
-  position: relative;
-}
-
 .bounce {
   animation: bounce_frames 0.5s;
   animation-direction: alternate;
@@ -1149,6 +1145,47 @@ right: 13vw;
   to {transform: translate3d(0, 50px, 0);}
 }
 
+/* 눈사람 */
+.snow{
+  height: 20px;
+  position: absolute;
+  height: 60px;
+  bottom: -19.8vh;
+  right: 15vw;
+  animation: snowAni 4s linear  infinite;
+}
+
+.rint{
+  position: relative;
+}
+
+@keyframes snowAni {
+  0% {
+    right: 15vw;
+  }
+	20% {
+    right: 20vw;
+  }
+	40% {
+    right: 20vw;
+  }
+	60% {
+    transform: rotateY(0deg);
+  }
+  60.01%{
+    transform: rotateY(180deg);
+    right: 20vw;
+  }
+
+	80% {
+    right: 20vw;
+    transform: rotateY(180deg);
+  }
+	100% {
+    right: 15vw;
+    transform: rotateY(180deg);
+  }
+}
 
 
 /* 푸터 */
