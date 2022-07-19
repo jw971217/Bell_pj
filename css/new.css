@@ -379,7 +379,6 @@ header ul li a{
   right: 12vw;
   top: 85vh;
   font-weight: bold;
-  color: rgb(255, 47, 47);
   font-size: 5rem;
   animation: motionAni 1.2s linear 0s infinite alternate;
 }
@@ -387,12 +386,30 @@ header ul li a{
 
 
 @keyframes motionAni {
-	0% {margin-top: 0px;}
-	20% {margin-top: 10px;}
-	40% {margin-top: 0px;}
-	60% {margin-top: 10px;}
-	80% {margin-top: 0px;}
-	100% {margin-top: 0px;}
+  0% {
+    margin-top: 0px;
+    color: rgb(214, 111, 111);
+  }
+	20% {
+    margin-top: 10px;
+    color: rgb(75, 212, 137);
+  }
+	40% {
+    margin-top: 0px;
+    color: rgb(82, 104, 204);
+  }
+	60% {
+    margin-top: 10px;
+    color: rgb(200, 202, 78);
+  }
+	80% {
+    margin-top: 0px;
+    color: rgb(169, 80, 204);
+  }
+	100% {
+    margin-top: 0px;
+    color: rgb(204, 162, 83);
+  }
 }
 
 
