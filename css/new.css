@@ -1200,7 +1200,7 @@ right: 13vw;
   height: 45px;
   bottom: -19.7vh;
   left: 15vw;
-  animation: rabAni 3.8s linear  infinite;
+  animation: rabAni 3.5s linear  infinite;
 }
 
 @keyframes rabAni {
@@ -1222,16 +1222,16 @@ right: 13vw;
     transform: rotateY(180deg);
   }
 	69% {
-    left: 23vw;
+    left: 22vw;
     transform: rotateY(180deg);
   }
   69.01%{
     transform: rotateY(0deg);
-    left: 22vw;
+    left: 24vw;
   }
 
 	80% {
-    left: 20vw;
+    left: 22vw;
     transform: rotateY(0deg);
   }
 	100% {
