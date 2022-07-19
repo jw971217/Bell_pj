@@ -381,7 +381,7 @@ header ul li a{
   font-weight: bold;
   font-size: 2rem;
   animation: motionAni 1.2s linear 0s infinite alternate;
-  text-shadow: 5px 5px 4px rgb(134, 134, 134);
+  text-shadow: 5px 2px 4px rgb(134, 134, 134);
 }
 
 
@@ -1200,7 +1200,7 @@ right: 13vw;
   height: 45px;
   bottom: -19.7vh;
   left: 15vw;
-  animation: rabAni 3.5s linear  infinite;
+  animation: rabAni 2.5s linear  infinite;
 }
 
 @keyframes rabAni {
@@ -1208,31 +1208,39 @@ right: 13vw;
     left: 15vw;
     transform: rotateY(180deg);
   }
-  10% {
-    left: 15vw;
+
+	25% {
+    left: 18vw;
+    transform: rotateY(180deg);
+  }
+	28% {
+    left: 18vw;
     transform: rotateY(180deg);
   }
 
-	20% {
-    left: 17vw;
+	50% {
+    left: 21vw;
     transform: rotateY(180deg);
   }
-	40% {
-    left: 20vw;
+	51.5% {
+    left: 21vw;
     transform: rotateY(180deg);
   }
-	69% {
-    left: 22vw;
-    transform: rotateY(180deg);
-  }
-  69.01%{
+	51.51% {
+    left: 21vw;
     transform: rotateY(0deg);
-    left: 24vw;
   }
-
-	80% {
-    left: 22vw;
+	53% {
+    left: 21vw;
     transform: rotateY(0deg);
+  }
+  75%{
+    transform: rotateY(0deg);
+    left: 18vw;
+  }
+  78%{
+    transform: rotateY(0deg);
+    left: 18vw;
   }
 	100% {
     left: 15vw;
@@ -1240,7 +1248,14 @@ right: 13vw;
   }
 }
 
-
+/* 집 */
+.house{
+  position: absolute;
+  height: 150px;
+  bottom: -19.7vh;
+  left: 41vw;
+  z-index: -1;
+}
 
 
 
