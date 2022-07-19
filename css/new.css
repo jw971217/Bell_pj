@@ -1041,34 +1041,36 @@ right: 13vw;
 /* 슬라임 */
 .slime1{
   position: absolute;
-  height: 200px;
-  bottom: -20vh;
+  height: 30px;
+  bottom: -15vh;
   left: 5vw;
-  animation: sliAni .3s linear infinite alternate;
+  animation: bounce_frames .3s linear infinite alternate;
 }
 .slime2{
   position: absolute;
-  height: 44px;
-  bottom: -20.5vh;
+  height: 30px;
+  bottom: -15vh;
   right: 8vw;
-  animation: sliAni .3s linear 1s infinite alternate;
+  animation: bounce_frames infinite;
+  animation-delay: .5s !important;
 }
 
 .rint{
   position: relative;
 }
 
-@keyframes sliAni {
-  from{
-    transform: translateY(0%);
-  }
-  to{
-    transform: translateY(-15%);
-  }
+.bounce {
+  animation: bounce_frames 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+  animation-iteration-count: 4;
+  animation-iteration-count: infinite;
 }
 
-
-
+@keyframes bounce_frames {
+  from {transform: translate3d(0, 0, 0);}
+  to {transform: translate3d(0, 50px, 0);}
+}
 
 /* 푸터 */
 .info{
