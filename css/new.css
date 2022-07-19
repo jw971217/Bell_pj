@@ -805,8 +805,31 @@ header ul li a{
     }
   }
   
-  
-  
+  .brother1:hover ~.sister1{
+    opacity: 0;
+  }
+  .brother2:hover .animated-title{
+    opacity: 0;
+  }
+  .brother2:hover ~.animated-title1{
+    opacity: 0;
+  }
+  .brother3:hover .sister2{
+    opacity: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   
@@ -921,23 +944,6 @@ right: 13vw;
 .good:hover{
   background-color: #000;
 }
-
-
-
-
-.boss .boss1:hover .animated-title1{
-  opacity: 0;
-}
-.boss2:hover .animated-title{
-  opacity: 0;
-}
-.boss3:hover .animated-title2{
-  opacity: 0;
-}
-
-
-
-
 
 /* 회사랑 내 소개 */
 .rint{
