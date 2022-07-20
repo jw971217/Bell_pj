@@ -846,6 +846,11 @@ header ul li a{
   height: 10vw;
 }
 
+.cube2 span{
+  border: 3px solid rgb(0, 255, 115);
+  box-sizing: border-box;
+}
+
 
 /* 앞면 */
 .cube2 span:nth-child(1){
@@ -891,15 +896,32 @@ header ul li a{
 /* 애니메이션 클래스 */
 .cube-ani2{
   /* 애니메이션: 이시이지반방마 */
-  animation: cubeAni 10s linear infinite;
+  animation: cubeAni2 1s linear infinite;
 }
 
 
 /* 회전키프레임 */
-@keyframes cubeAni {
-  to{
-      transform: rotateX(370deg) rotateY(-330deg) /* rotateZ(360deg) */;
+@keyframes cubeAni2 {
+  0%{
+    transform: rotateX(90deg) rotateY(-90deg);
   }
+
+  100%{
+    transform: rotateX(90deg) rotateY(-90deg) rotateZ(0deg);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }/* 키프레임 */
 
 
@@ -959,7 +981,7 @@ header ul li a{
 /* 애니메이션 클래스 */
 .cube-ani3{
   /* 애니메이션: 이시이지반방마 */
-  animation: cubeAni 10s linear infinite;
+  animation: cubeAni 9s linear infinite;
 }
 
 
