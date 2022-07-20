@@ -730,13 +730,17 @@ header ul li a{
   text-shadow: 1px 1px 1px rgb(255, 255, 0);
 }
 
+
+
+
+
+
+
 /* 큐브 */
 .cube{
   position: absolute;
-  top: calc(50% - 150px);
-  left: calc(50% - 150px);
-  width: 300px;
-  height: 300px;
+  width: 15vw;
+  height: 15vw;
   z-index: 999;
   /* 
   [ 입체로 설정하기 ]
@@ -760,54 +764,63 @@ header ul li a{
   height: 100%;
   /* 부모는? .cube */
   /* opacity: 0; */
-  /* outline: 2px dashed ; */
-  /* border-radius: 10px; */
+  border-radius: 3px;
+}
+
+/* 큐브1 */
+.cube1{
+  top: -180px;
+  left: calc(50% - 0vw);
+}
+
+.cube1 span{
+  outline: 1px solid rgb(255, 230, 0) ;
+  border: 2px solid rgb(255, 0, 0);
 }
 
 /* 앞면 */
-.cube span:nth-child(1){
+.cube1 span:nth-child(1){
   background: url(/발사믹/img/문로드\ 보스.jpg) no-repeat right/auto 105%;
   /* 화면방향(Z축) */
-  transform: translateZ(150px);
+  transform: translateZ(7.5vw);
 }
 
 /* 2. 오른쪽면 */
-.cube span:nth-child(2){
+.cube1 span:nth-child(2){
   background: url(/발사믹/img/기계지렁이.jpeg) no-repeat center/cover;
   /* 화면방향(Z축) */
-  transform:  rotateY(90deg)translateZ(150px);
+  transform:  rotateY(90deg)translateZ(7.5vw);
 }
 /* 3. 뒷면 */
-.cube span:nth-child(3){
+.cube1 span:nth-child(3){
   background: url(/발사믹/img/플렌테라.jpg) no-repeat center/cover;
   /* 화면방향(Z축) */
-  transform:  rotateY(180deg)translateZ(150px);
+  transform:  rotateY(180deg)translateZ(7.5vw);
 }
 /* 4. 왼쪽면 */
-.cube span:nth-child(4){
+.cube1 span:nth-child(4){
   background: url(/발사믹/img/공작.jpeg) no-repeat center/cover;
   /* 화면방향(Z축) */
-  transform:  rotateY(-90deg)translateZ(150px);
+  transform:  rotateY(-90deg)translateZ(7.5vw);
 }
 /* 5. 윗면 */
-.cube span:nth-child(5){
+.cube1 span:nth-child(5){
   background: url(/발사믹/img/여왕벌\ 보스.jpg) no-repeat top/cover;
   /* 화면방향(Z축) */
-  transform:  rotateX(90deg)translateZ(150px);
+  transform:  rotateX(90deg)translateZ(7.5vw) rotate(90deg);
+  
 }
 /* 6. 아랫면 */
-.cube span:nth-child(6){
+.cube1 span:nth-child(6){
   background: url(/발사믹/img/눈깔\ 보스.jpg) no-repeat center/cover;
   /* 화면방향(Z축) */
-  transform:  rotateX(-90deg)translateZ(150px);
+  transform:  rotateX(-90deg)translateZ(7.5vw);
 }
 
 /* 애니메이션 클래스 */
-.cube-ani{
+.cube-ani1{
   /* 애니메이션: 이시이지반방마 */
   animation: cubeAni 7s linear infinite;
-  /* 처음에 멈춰있기 */
-  /* animation-play-state: paused; */
 }
 
 
@@ -816,18 +829,172 @@ header ul li a{
   to{
       transform: rotateX(370deg) rotateY(-330deg) /* rotateZ(360deg) */;
   }
-
-  /* x축 양의 방향으로 10도에서 출발
-      양의 방향 360도 +10도=370도
-      음의 방향 -360도 +30도=-330도
-
-      Y축 양의 방향으로 30도에서 출발
-      양의 방향 360도 +30도=390도
-      음의 방향 -360도 +30도=-330도
-      
-      ->rotateZ() - z축 회전도 가능함.
-  */
 }/* 키프레임 */
+
+
+
+
+
+
+
+
+/* 큐브2 */
+.cube2{
+  top: -200px;
+  left: calc(50% - 30vw);  
+  width: 20vw;
+  height: 10vw;
+}
+
+
+/* 앞면 */
+.cube2 span:nth-child(1){
+  background: url(/발사믹/img/정글배경.gif) no-repeat center/cover;
+  /* 화면방향(Z축) */
+  transform: translateZ(10vw) rotate(90deg);
+}
+
+/* 2. 오른쪽면 */
+.cube2 span:nth-child(2){
+  background: url(/발사믹/img/사막\ 배굥.gif) no-repeat center/cover;
+  /* 화면방향(Z축) */
+  transform:  rotateY(90deg)translateZ(10vw);
+}
+/* 3. 뒷면 */
+.cube2 span:nth-child(3){
+  background: url(/발사믹/img/지옥\ 배경.gif) no-repeat center/cover;
+  /* 화면방향(Z축) */
+  transform:  rotateY(180deg)translateZ(10vw);
+}
+/* 4. 왼쪽면 */
+.cube2 span:nth-child(4){
+  background: url(/발사믹/img/빨간\ 배경.gif) no-repeat center/cover;
+  /* 화면방향(Z축) */
+  transform:  rotateY(-90deg)translateZ(10vw);
+}
+/* 5. 윗면 */
+.cube2 span:nth-child(5){
+  background: url(/발사믹/img/도봉산\ 배경.gif.crdownload) no-repeat center/cover;
+  /* 화면방향(Z축) */
+  transform:  rotateX(90deg)translateZ(10vw) rotate(90deg);
+  
+}
+/* 6. 아랫면 */
+.cube2 span:nth-child(6){
+  background: url(/발사믹/img/눈\ 배경.gif) no-repeat center/cover;
+  /* 화면방향(Z축) */
+  transform:  rotateX(-90deg)translateZ(10vw) rotate(90deg);
+}
+
+
+
+/* 애니메이션 클래스 */
+.cube-ani2{
+  /* 애니메이션: 이시이지반방마 */
+  animation: cubeAni 10s linear infinite;
+}
+
+
+/* 회전키프레임 */
+@keyframes cubeAni {
+  to{
+      transform: rotateX(370deg) rotateY(-330deg) /* rotateZ(360deg) */;
+  }
+}/* 키프레임 */
+
+
+
+
+
+/* 큐브3 */
+.cube3{
+  top: -200px;
+  left: calc(50% - -25vw);  
+  width: 10vw;
+  height: 10vw;
+}
+
+
+/* 앞면 */
+.cube3 span:nth-child(1){
+  background: url(/발사믹/img/테라프리즈마.png) no-repeat center/cover;
+  /* 화면방향(Z축) */
+  transform: translateZ(9vw) rotate(90deg) rotate(-90deg);
+}
+
+/* 2. 오른쪽면 */
+.cube3 span:nth-child(2){
+  background: url(/발사믹/img/낫-removebg-preview.png) no-repeat center/cover;
+  /* 화면방향(Z축) */
+  transform:  rotateY(90deg)translateZ(9vw);
+}
+/* 3. 뒷면 */
+.cube3 span:nth-child(3){
+  background: url(/발사믹/img/별의_진노-removebg-preview.png) no-repeat center/cover;
+  /* 화면방향(Z축) */
+  transform:  rotateY(180deg)translateZ(9vw);
+}
+/* 4. 왼쪽면 */
+.cube3 span:nth-child(4){
+  background: url(/발사믹/img/프리즈마-removebg-preview.png) no-repeat center/cover;
+  /* 화면방향(Z축) */
+  transform:  rotateY(-90deg)translateZ(9vw);
+}
+/* 5. 윗면 */
+.cube3 span:nth-child(5){
+  background: url(/발사믹/img/활-removebg-preview.png) no-repeat center/contain;
+  /* 화면방향(Z축) */
+  transform:  rotateX(90deg)translateZ(9vw) rotate(90deg);
+  
+}
+/* 6. 아랫면 */
+.cube3 span:nth-child(6){
+  background: url(/발사믹/img/지팡이-removebg-preview.png) no-repeat center/cover;
+  /* 화면방향(Z축) */
+  transform:  rotateX(-90deg)translateZ(9vw) rotate(90deg);
+}
+
+
+
+/* 애니메이션 클래스 */
+.cube-ani3{
+  /* 애니메이션: 이시이지반방마 */
+  animation: cubeAni 10s linear infinite;
+}
+
+
+/* 회전키프레임 */
+@keyframes cubeAni {
+  to{
+      transform: rotateX(370deg) rotateY(-330deg) /* rotateZ(360deg) */;
+  }
+}/* 키프레임 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
