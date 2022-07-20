@@ -896,33 +896,31 @@ header ul li a{
 /* 애니메이션 클래스 */
 .cube-ani2{
   /* 애니메이션: 이시이지반방마 */
-  animation: cubeAni2 1s linear infinite;
+  animation: cubeAni2 10s linear infinite;
 }
 
 
 /* 회전키프레임 */
 @keyframes cubeAni2 {
-  0%{
-    transform: rotateX(90deg) rotateY(-90deg);
-  }
-
-  100%{
-    transform: rotateX(90deg) rotateY(-90deg) rotateZ(0deg);
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-}/* 키프레임 */
+0%{
+  transform: rotateX(270deg) rotate(0deg);
+}
+20%{
+  transform: rotateX(3600deg) rotate(0deg);
+}  
+40%{
+  transform: rotateX(deg) rotate(270deg);
+}  
+60%{
+  transform: rotateX(360deg) rotate(270deg);
+}  
+80%{
+  transform: rotateX(360deg) rotate(270deg);
+} 
+100%{
+  transform: rotateX(270deg) rotate(0deg);
+}
+}/* 키프레임
 
 
 
@@ -981,12 +979,12 @@ header ul li a{
 /* 애니메이션 클래스 */
 .cube-ani3{
   /* 애니메이션: 이시이지반방마 */
-  animation: cubeAni 9s linear infinite;
+  animation: cubeAni3 9s linear infinite;
 }
 
 
 /* 회전키프레임 */
-@keyframes cubeAni {
+@keyframes cubeAni3 {
   to{
       transform: rotateX(370deg) rotateY(-330deg) /* rotateZ(360deg) */;
   }
