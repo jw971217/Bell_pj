@@ -934,12 +934,6 @@ right: 13vw;
 
 
 
-
-
-
-
-
-
 /* 기타기타 */
 .more{
   width: 100%;
@@ -1223,13 +1217,19 @@ right: 13vw;
   /* 화면방향(Z축) */
   transform:  rotateX(-90deg)translateZ(10vw) rotate(90deg);
 }
+/* 7. wndrks면 */
+.cube3 span:nth-child(7){
+  background: url(/발사믹/img/법사_책-removebg-preview.png) no-repeat center/cover;
+  /* 화면방향(Z축) */
+  transform:  rotateX(-90deg)rotate(90deg);
+}
 
 
 
 /* 애니메이션 클래스 */
 .cube-ani3{
   /* 애니메이션: 이시이지반방마 */
-  animation: cubeAni3 9s linear infinite;
+  animation: cubeAni3 7s linear infinite;
 }
 
 
@@ -1239,11 +1239,6 @@ right: 13vw;
       transform: rotateX(370deg) rotateY(-330deg) /* rotateZ(360deg) */;
   }
 }/* 키프레임 */
-
-
-
-
-
 
 /* 큐브4 */
 .cube4{
