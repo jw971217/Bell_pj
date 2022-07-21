@@ -506,13 +506,14 @@ header ul li a{
 
 /* 그림 */
 .gint .pic{
-  width: 41vw;
+  width: 42vw;
   height: 45vh;
   transition: .3s;
+  position: relative;
 }
 
 .gint img{
-    width: 40vw;
+    width: 41vw;
     height: 43vh;
     border-radius: 10px;
     object-fit: cover;
@@ -993,7 +994,7 @@ right: 13vw;
 }
 
 .text1{
-  padding: 0 10vw;
+  padding: 0 15vw;
 }
 
 /* 큐브1 */
@@ -1177,7 +1178,7 @@ right: 13vw;
 
 /* 큐브3 */
 .cube3{
-  top: 15vw;
+  top: 19vw;
   left: calc(50% - -30vw);  
   width: 10vw;
   height: 10vw;
@@ -1246,9 +1247,9 @@ right: 13vw;
 
 /* 큐브4 */
 .cube4{
-  top: 10vw;
+  top: 13vw;
   left: 5vw;  
-  width:10vw;
+  width:12vw;
   height: 20vw;
   position: relative;
 }
@@ -1257,26 +1258,26 @@ right: 13vw;
 .cube4 span:nth-child(1){
   background: url(/발사믹/img/가이드.png) no-repeat bottom/cover;
   /* 화면방향(Z축) */
-  transform: translateZ(5vw) rotate(0deg);
+  transform: translateZ(6vw) rotate(0deg);
 }
 
 /* 2. 오른쪽면 */
 .cube4 span:nth-child(2){
   background: url(/발사믹/img/상인.png) no-repeat bottom/cover;
   /* 화면방향(Z축) */
-  transform:  rotateY(90deg)translateZ(5vw);
+  transform:  rotateY(90deg)translateZ(6vw);
 }
 /* 3. 뒷면 */
 .cube4 span:nth-child(3){
   background: url(/발사믹/img/간호사.png) no-repeat bottom/cover;
   /* 화면방향(Z축) */
-  transform:  rotateY(180deg)translateZ(5vw);
+  transform:  rotateY(180deg)translateZ(6vw);
 }
 /* 4. 왼쪽면 */
 .cube4 span:nth-child(4){
   background: url(/발사믹/img/총기상인.png) no-repeat bottom/cover;
   /* 화면방향(Z축) */
-  transform:  rotateY(-90deg)translateZ(5vw);
+  transform:  rotateY(-90deg)translateZ(6vw);
 }
 
 
@@ -1582,58 +1583,30 @@ right: 13vw;
 }
 
 /* 토끼 */
-.rab{
+.rint .rab{
   position: absolute;
   height: 45px;
   bottom: -19.7vh;
-  left: 15vw;
-  animation: rabAni 2.5s linear  infinite;
+  left: -5%;
+  animation: rabAni 10s linear infinite;
+  transform: rotateY(180deg);
+  z-index: 9;
 }
 
 @keyframes rabAni {
-  0% {
-    left: 15vw;
-    transform: rotateY(180deg);
-  }
-
-	25% {
-    left: 18vw;
-    transform: rotateY(180deg);
-  }
-	28% {
-    left: 18vw;
-    transform: rotateY(180deg);
-  }
-
-	50% {
-    left: 21vw;
-    transform: rotateY(180deg);
-  }
-	51.5% {
-    left: 21vw;
-    transform: rotateY(180deg);
-  }
-	51.51% {
-    left: 21vw;
-    transform: rotateY(0deg);
-  }
-	53% {
-    left: 21vw;
-    transform: rotateY(0deg);
-  }
-  75%{
-    transform: rotateY(0deg);
-    left: 18vw;
-  }
-  78%{
-    transform: rotateY(0deg);
-    left: 18vw;
-  }
-	100% {
-    left: 15vw;
-    transform: rotateY(0deg);
-  }
+to{
+  left: 100%;
+  transform: translateX(180deg);
 }
+
+
+
+
+
+
+
+
+}/* 키프레임 */
 
 /* 집 */
 .house{
