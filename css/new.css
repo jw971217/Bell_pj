@@ -504,19 +504,19 @@ header ul li a{
     text-align: center;
 }
 
-/* 그림 */
-.gint .pic{
-  width: 42vw;
-  height: 45vh;
-  transition: .3s;
+/* 그림과 글 박스 */
+.gint{
   position: relative;
 }
 
+/* 그림 */
 .gint img{
+  transition: .3s;
     width: 41vw;
     height: 43vh;
     border-radius: 10px;
     object-fit: cover;
+    position: relative;
 }
 
 /* gif 보더 */
