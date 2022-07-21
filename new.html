@@ -7,6 +7,7 @@
     <title>New Terraria</title>
     <link rel="stylesheet" href="./css/new.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./fonts/PressStart2P-Regular.ttf">
 </head>
 <body class="scrollBar">
@@ -205,20 +206,20 @@
                 // 1. 함수호출확인
                 console.log("나야나!");
 
-                var 목표 = document.getElementsByClassName('sister').item(0);
+                var 목표 = document.getElementsByClassName('f1').item(0);
             
                 // 3-1. 글자색 변경
                 목표.style.opacity = 0;
 
                 목표.style.transition = "1s ease-out 1s alternate forward";
-            }///////////////////보여줘 함수///////////////////
+            }///////////////////사라져 함수///////////////////
             /////////////////////////////////////////////////
 
             function 보여줘(){
                 // 1. 함수호출확인
                 console.log("나야나!");
 
-                var 목표 = document.getElementsByClassName('sister').item(0);
+                var 목표 = document.getElementsByClassName('f1').item(0);
             
                 // 3-1. 글자색 변경
                 목표.style.opacity = 1;
@@ -227,24 +228,26 @@
             }///////////////////보여줘 함수///////////////////
             /////////////////////////////////////////////////
 
+
+
             function 사라져2(){
                 // 1. 함수호출확인
                 console.log("나야나!");
 
-                var 목표 = document.getElementsByClassName('animated-title2').item(0);
+                var 목표 = document.getElementsByClassName('f2').item(0);
             
                 // 3-1. 글자색 변경
                 목표.style.opacity = 0;
 
                 목표.style.transition = "1s ease-out 1s alternate forward";
-            }///////////////////보여줘 함수///////////////////
+            }///////////////////사라져 함수///////////////////
             /////////////////////////////////////////////////
 
             function 보여줘2(){
                 // 1. 함수호출확인
                 console.log("나야나!");
 
-                var 목표 = document.getElementsByClassName('animated-title2').item(0);
+                var 목표 = document.getElementsByClassName('f2').item(0);
             
                 // 3-1. 글자색 변경
                 목표.style.opacity = 1;
@@ -261,12 +264,31 @@
                     <img src="./발사믹/img/다중 보스전.gif" alt="다중 보스전">
                     <span>Wellcome To The</span>
                     <!-- 1차 워닝 -->
-                </div>
-                <div class="animated-title animated-title1 sister" >
-                    <div class="track">
-                        <div class="content">&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!</div>
+                    <!-- 흘러가는 글자박스1 -->
+                    <div class="fbx f1 animated-title1">
+                        <div class="tbx">
+                            <ul>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+
+                            </ul>
+                            <ul>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+
+                            </ul>
+                        </div>
                     </div>
-                </div>
 
                 <!-- 보스이미지 2 -->
                 <div class="boss2 brother2" onmouseover="사라져(),사라져2()" onmouseleave="보여줘(),보여줘2()">
@@ -278,14 +300,31 @@
                 </div>
 
                     <!-- 2차 워닝 -->
-                    <div class="animated-title animated-title2 sister">
-                        <div class="track">
-                            <div class="content">&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!&nbsp;&nbsp;WARNING!</div>
+                    <div class="fbx f2 animated-title2">
+                        <div class="tbx">
+                            <ul>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                            </ul>
+                            <ul>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                                <li>WARNING!</li>
+                            </ul>
                         </div>
                     </div>
                 
                 <!-- 보스 이미지 3 -->
-                <div class="boss3 brother3" onmouseover="사라져2()" onmouseleave="보여줘2()">
+                <div class="boss3 brother3" onmouseover="사라져()" onmouseleave="보여줘()">
                     <img src="발사믹/img/Honeycam_2020-04-12_22-33-04.gif" alt="문로드">
                     <span>Stranger</span>
                 </div>

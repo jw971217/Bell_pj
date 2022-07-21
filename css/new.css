@@ -729,15 +729,125 @@ header ul li a{
   text-shadow: 1px 1px 1px rgb(255, 255, 0);
 }
 
+
+
+
+
+
+
+
+
+
 /* WARNING! 부분 */
-.animated-title {
+        /* 흘러가는 글자박스 */
+        .fbx{
+          position: relative;
+          width: 100vw;
+          z-index: 999;
+          transition: 1s;
+        }
+        
+        /* 텍스트 박스(움직일 박스) */
+        .tbx{
+          position: relative;
+          left: 0;/* 초기값 */
+          width: 200vw;
+          display: flex;
+          border: 15px solid red;
+          /* outline: 10px solid red; */
+          background-color: yellow;
+        }
+
+        /* 텍스트박스 하위ul */
+      .tbx ul{
+          display: flex;
+          /* 직계 li옆으로 흐름 */
+          flex: 1;
+
+          /* 기본없앰 */
+          margin: 0;
+          padding: 0;
+          list-style: none;
+      }
+      
+      /* 하위 li */
+      .tbx li{
+          /* 등분할 설정 */
+          flex: 1;
+          text-align: center;
+          font-family: 'Bebas Neue', cursive;
+          font-size: 4vw;
+          color: rgb(0, 0, 0);
+          padding: 0 10px;
+      }
+
+      /* 첫번째 박스 위치 */
+      .f1{
+          /* bottom: 5vh; */
+          transform: rotate(-30deg);
+      }
+
+      /* 애니메이션 호출 */
+      .f1 .tbx{
+          /* 애니메이션 이시이지반방마 */
+          animation: txtFlow2 10s linear infinite;
+          left: -100%;
+      }
+
+      /* 글자 흐르기 키프레임 1 */
+      @keyframes txtFlow1 {
+          to{
+              left: -100%;
+          }
+      }
+
+
+      /* 두번째 박스 위치 */
+      .f2{
+          top: -15vh;
+          transform: rotate(15deg);
+      }
+
+      /* 흐르는 박스 최초위치 */
+
+      /* 애니메이션 호출 */
+      .f2 .tbx{
+          /* 애니메이션 이시이지반방마 */
+          animation: txtFlow1 10s linear infinite;
+      }
+
+      /* 글자 흐르기 키프레임 1 */
+      @keyframes txtFlow2 {
+          to{
+              left: 0;
+          }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .animated-title {
   font-size:3rem; 
   font-family: 'Bebas Neue', cursive;
   position: absolute; 
   width: 140%;
   height: auto; 
   padding:2rem 0; 
-  line-height: 5.5rem;
+  line-height: 7.5vw;
   overflow-x: hidden; 
   overflow-y: hidden; 
   background-color: yellow;
@@ -800,21 +910,33 @@ header ul li a{
     -webkit-transform: translateY(calc(100% - 8rem)); 
     transform: translateY(calc(100% - 8rem));
     }
-  }
-  
-  /* .brother1:hover ~.sister1{
-    opacity: 0;
-  }
-  .brother2:hover .animated-title{
-    opacity: 0;
-  }
-  .brother2:hover ~.animated-title1{
-    opacity: 0;
-  }
-  .brother3:hover .sister2{
-    opacity: 0;
   } */
   
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* 보스 소개 */
   .boss{
     width: 100%;
@@ -939,6 +1061,7 @@ right: 13vw;
   width: 100%;
   position: relative;
   height: 100%;
+  margin-top: 160vh;
 }
 
 .more .text{
