@@ -993,7 +993,7 @@ right: 13vw;
 }
 
 .text1{
-  padding: 0 5vw;
+  padding: 0 10vw;
 }
 
 /* 큐브1 */
@@ -1071,7 +1071,7 @@ right: 13vw;
 }
 
 .text2{
-  padding: 0 5vw;
+  padding: 0 10vw;
   right: 0;
 }
 
@@ -1102,19 +1102,19 @@ right: 13vw;
 .cube2 span:nth-child(2){
   background: url(/발사믹/img/사막\ 배굥.gif) no-repeat center/cover;
   /* 화면방향(Z축) */
-  transform:  rotateX(90deg)translateZ(15vw);
+  transform:  rotateX(-90deg)translateZ(15vw);
 }
 /* 3. 뒷면 */
 .cube2 span:nth-child(3){
   background: url(/발사믹/img/지옥\ 배경.gif) no-repeat center/cover;
   /* 화면방향(Z축) */
-  transform:  rotateX(180deg)translateZ(15vw);
+  transform:  rotateX(-180deg)translateZ(15vw);
 }
 /* 4. 왼쪽면 */
 .cube2 span:nth-child(4){
   background: url(/발사믹/img/눈\ 배경.gif) no-repeat center/cover;
   /* 화면방향(Z축) */
-  transform:  rotateX(-90deg)translateZ(15vw);
+  transform:  rotateX(90deg)translateZ(15vw);
 }
 
 
