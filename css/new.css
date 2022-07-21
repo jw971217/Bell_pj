@@ -801,7 +801,7 @@ header ul li a{
     }
   }
   
-  .brother1:hover ~.sister1{
+  /* .brother1:hover ~.sister1{
     opacity: 0;
   }
   .brother2:hover .animated-title{
@@ -812,7 +812,7 @@ header ul li a{
   }
   .brother3:hover .sister2{
     opacity: 0;
-  }
+  } */
   
   /* 보스 소개 */
   .boss{
