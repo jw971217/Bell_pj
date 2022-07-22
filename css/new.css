@@ -9,8 +9,8 @@
 
 /* 공사중 */
 *{
-    /* outline: 1px dashed hotpink; */
-    box-sizing: border-box;
+    /* outline: 1px dashed hotpink;
+    box-sizing: border-box; */
 }
 
 html{
@@ -41,7 +41,7 @@ body{
 .head{
     display: flex;
     height: 5vh;
-    width: 100%;
+    width: 100vw;
     border-bottom: 2px solid #000;
     position: fixed;
     justify-content: space-between;
@@ -57,6 +57,7 @@ header h1 img{
 header h1{
   position: relative;
   left: 10px;
+  z-index: 9999;
 }
 
 header h1 img{
@@ -84,16 +85,15 @@ header ul li a{
     */
     /* 트랜지션:속시이지 */
     transition: .3s; 
-    width: 100%;
-    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   /* GNB 오버시 나올 전체 배경 가상요소 */
   .gnb::after {
     content: "";
     display: block;
-    position: absolute;
-    left: 0;
     width: 100vw;
     /* left,top의 부모는? .gnb */
     height: 0; /* 170px -> 오버시 */
@@ -110,8 +110,7 @@ header ul li a{
 
   /* ul 초기화 */
   .gnb ul {
-    width: 100;
-    margin: 0 auto;
+    justify-content: center;
   }
   
   /* 가상요소로 clear설정하기 */
@@ -124,6 +123,7 @@ header ul li a{
   /* 상위 li 리스트요소 */
   .gnb>ul>li{
     text-align: center;
+    width: 150px;
   }
   
   /* li 하위 a요소 */
@@ -186,8 +186,9 @@ header ul li a{
 
   /* 서브메뉴 ol */
   .smenu ol{
-    padding: 15px;
-    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
   }
   /*서브메뉴 li */
   .smenu a{
@@ -269,6 +270,7 @@ header ul li a{
     background-color: rgb(255, 255, 255);
     border-radius: 50px;
     border: 2px solid #000;
+    z-index: 9999;
   }
   
   .lan{
@@ -325,7 +327,7 @@ header ul li a{
   border-radius: 50%;
   background-color: yellow;
   position: absolute;
-  bottom: -130px;
+  bottom: -160px;
   left: 50%;
   transform: translateX(-50%);
   border: 20px double #01dd77;
