@@ -9,8 +9,8 @@
 
 /* 공사중 */
 *{
-    /* outline: 1px dashed hotpink;
-    box-sizing: border-box; */
+    /* outline: 1px dashed hotpink; */
+    box-sizing: border-box;
 }
 
 html{
@@ -745,6 +745,7 @@ header ul li a{
           width: 100vw;
           z-index: 999;
           transition: 1s;
+          text-shadow: none;
         }
         
         /* 텍스트 박스(움직일 박스) */
@@ -753,8 +754,7 @@ header ul li a{
           left: 0;/* 초기값 */
           width: 200vw;
           display: flex;
-          border: 15px solid red;
-          /* outline: 10px solid red; */
+          border: 1vw solid red;
           background-color: yellow;
         }
 
@@ -776,9 +776,10 @@ header ul li a{
           flex: 1;
           text-align: center;
           font-family: 'Bebas Neue', cursive;
-          font-size: 4vw;
+          font-size: 4.5vw;
           color: rgb(0, 0, 0);
-          padding: 0 10px;
+          line-height: 4.5vw;
+          padding: 5px 10px 0;
       }
 
       /* 첫번째 박스 위치 */

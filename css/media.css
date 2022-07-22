@@ -5,7 +5,7 @@
 @media screen and (max-width: 1070px) {
 
 *{
-    outline: 1px dashed lightcoral;
+    /* outline: 1px dashed lightcoral; */
 }
 
 .head{
