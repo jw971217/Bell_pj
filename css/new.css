@@ -749,20 +749,21 @@ header ul li a{
         /* 흘러가는 글자박스 */
         .fbx{
           position: relative;
-          width: 100vw;
+          width: 150vw;
           z-index: 999;
-          transition: 1s;
+          transition: .5s;
           text-shadow: none;
+          border: 10px solid red;
+          background-color: yellow;
+          left: -25vw;
         }
         
         /* 텍스트 박스(움직일 박스) */
         .tbx{
           position: relative;
           left: 0;/* 초기값 */
-          width: 200vw;
+          width: 100vw;
           display: flex;
-          border: 1vw solid red;
-          background-color: yellow;
         }
 
         /* 텍스트박스 하위ul */
@@ -783,10 +784,10 @@ header ul li a{
           flex: 1;
           text-align: center;
           font-family: 'Bebas Neue', cursive;
-          font-size: 4.5vw;
+          font-size: 50px;
           color: rgb(0, 0, 0);
-          line-height: 4.5vw;
-          padding: 5px 10px 0;
+          line-height: 50px;
+          padding: 5px 15px 0;
       }
 
       /* 첫번째 박스 위치 */
@@ -794,14 +795,14 @@ header ul li a{
           /* bottom: 5vh; */
           transform: rotate(-30deg);
       }
-      .boss1:hover .f1.on{
+      .f1.on{
         opacity: 0;
       }
 
       /* 애니메이션 호출 */
       .f1 .tbx{
           /* 애니메이션 이시이지반방마 */
-          animation: txtFlow2 10s linear infinite;
+          animation: txtFlow2 8s linear infinite;
           left: -100%;
       }
 
@@ -818,7 +819,7 @@ header ul li a{
           top: -15vh;
           transform: rotate(15deg);
       }
-      .f1.on{
+      .f2.on{
         opacity: 0;
       }
 
@@ -827,7 +828,7 @@ header ul li a{
       /* 애니메이션 호출 */
       .f2 .tbx{
           /* 애니메이션 이시이지반방마 */
-          animation: txtFlow1 10s linear infinite;
+          animation: txtFlow1 8s linear infinite;
       }
 
       /* 글자 흐르기 키프레임 1 */
