@@ -59,6 +59,11 @@ header h1{
   left: 10px;
 }
 
+header h1 img{
+  height: 90%;
+  padding-top: 5%;
+}
+
 /* 네비게이션 */
 header ul{
     display: flex;
@@ -79,6 +84,7 @@ header ul li a{
     */
     /* 트랜지션:속시이지 */
     transition: .3s; 
+    width: 100vw;
   }
 
   /* GNB 오버시 나올 전체 배경 가상요소 */
@@ -87,7 +93,7 @@ header ul li a{
     display: block;
     position: absolute;
     left: 0;
-    width: 100%;
+    width: 100vw;
     /* left,top의 부모는? .gnb */
     height: 0; /* 170px -> 오버시 */
     background-color: rgba(255, 255, 255, 0.9);
@@ -103,7 +109,7 @@ header ul li a{
 
   /* ul 초기화 */
   .gnb ul {
-    width: 750px;
+    width: 50vw;
     margin: 0 auto;
   }
   
@@ -255,8 +261,8 @@ header ul li a{
   /* 언어선택영역 */
   .lang{
     display: flex;
-    height: 3vh;
-    line-height: 3vh;
+    height: 30px;
+    line-height: 23px;
     position: relative;
     top: 50%;
     right: 10px;
@@ -267,7 +273,7 @@ header ul li a{
   }
   
   .lan{
-    height: 3vh;
+    height: 100%;
 
   }
 
@@ -276,7 +282,8 @@ header ul li a{
     display: block;
     color: rgb(0, 0, 0);
     transition: .3s;
-    font-weight: bold;
+    font-weight: bold;   
+    height: 100%;
   }
 
   .eng a{
@@ -319,7 +326,7 @@ header ul li a{
   border-radius: 50%;
   background-color: yellow;
   position: absolute;
-  bottom: -150px;
+  bottom: -125px;
   left: 50%;
   transform: translateX(-50%);
   border: 20px double #01dd77;
@@ -338,7 +345,7 @@ header ul li a{
   font-size: 3rem;
   font-weight: bold;
   display: block;
-  padding-top: 20px;
+  padding-top: 10px;
   text-shadow: 2px 2px 2px rgb(218, 139, 49);
 }
 
@@ -787,6 +794,9 @@ header ul li a{
           /* bottom: 5vh; */
           transform: rotate(-30deg);
       }
+      .boss1:hover .f1.on{
+        opacity: 0;
+      }
 
       /* 애니메이션 호출 */
       .f1 .tbx{
@@ -807,6 +817,9 @@ header ul li a{
       .f2{
           top: -15vh;
           transform: rotate(15deg);
+      }
+      .f1.on{
+        opacity: 0;
       }
 
       /* 흐르는 박스 최초위치 */
@@ -1021,7 +1034,7 @@ header ul li a{
   line-height: 48vh;
 }
 
-.boss1 span{
+.boss1>span{
   right: 2vw;
 }
 
@@ -1049,6 +1062,7 @@ right: 13vw;
 .boss .good{
   position: relative;
   display: block;
+  right: 0;
 }
 
 .good:hover{

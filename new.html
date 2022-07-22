@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./fonts/PressStart2P-Regular.ttf">
+    <script src="./js/new.js"></script>
 </head>
 <body class="scrollBar">
     <header>
@@ -153,25 +154,25 @@
             </div>
 
             <div class="job">
-                <div class="warrior">
+                <div class="warrior lo">
                     <div class="toss " id="trans10">
                         <img src="./발사믹/img/miniminiwawawa.png" alt="미니 전사와 설명글">
                         <img src="./발사믹/img/전사_장신-removebg-preview.png" alt="큰전사">
                     </div>
                 </div>
-                <div class="mage">
+                <div class="mage lo">
                     <div class="toss " id="trans10">
                         <img src="./발사믹/img/minimiiminiminiwiwizaza.png" alt="미니 마법사와 설명글">
                         <img src="./발사믹/img/마법사_장신-removebg-preview.png" alt="소환사 이미지">
                     </div>
                 </div>
-                <div class="ranger">
+                <div class="ranger lo">
                     <div class="toss " id="trans10">
                         <img src="./발사믹/img/mimimiimiimiimimimirarara.png" alt="미니 사수와 설명글">
                         <img src="./발사믹/img/사수_장신-removebg-preview.png" alt="소환사 이미지">
                     </div>
                 </div>
-                <div class="summoner">
+                <div class="summoner lo">
                     <div class="toss " id="trans10">
                         <img src="./발사믹/img/mimimiimiimiimimimisususususumm.png" alt="미니 소환사와 설명글">
                         <img src="./발사믹/img/제목_없음-removebg-preview-removebg-preview.png" alt="소환사 이미지">
@@ -201,67 +202,11 @@
                 </div>
             </div>
 
-            <script>
-            function 사라져(){
-                // 1. 함수호출확인
-                console.log("나야나!");
-
-                var 목표 = document.getElementsByClassName('f1').item(0);
-            
-                // 3-1. 글자색 변경
-                목표.style.opacity = 0;
-
-                목표.style.transition = "1s ease-out 1s alternate forward";
-            }///////////////////사라져 함수///////////////////
-            /////////////////////////////////////////////////
-
-            function 보여줘(){
-                // 1. 함수호출확인
-                console.log("나야나!");
-
-                var 목표 = document.getElementsByClassName('f1').item(0);
-            
-                // 3-1. 글자색 변경
-                목표.style.opacity = 1;
-
-                목표.style.transition = "1s ease-out 1s alternate forward";
-            }///////////////////보여줘 함수///////////////////
-            /////////////////////////////////////////////////
-
-
-
-            function 사라져2(){
-                // 1. 함수호출확인
-                console.log("나야나!");
-
-                var 목표 = document.getElementsByClassName('f2').item(1);
-            
-                // 3-1. 글자색 변경
-                목표.style.opacity = 0;
-
-                목표.style.transition = "1s ease-out 1s alternate forward";
-            }///////////////////사라져 함수///////////////////
-            /////////////////////////////////////////////////
-
-            function 보여줘2(){
-                // 1. 함수호출확인
-                console.log("나야나!");
-
-                var 목표 = document.getElementsByClassName('f2').item(1);
-            
-                // 3-1. 글자색 변경
-                목표.style.opacity = 1;
-
-                목표.style.transition = "1s ease-out 1s alternate forward";
-            }///////////////////보여줘 함수///////////////////
-            /////////////////////////////////////////////////
-            </script>
-
             <!-- 보스 소개 -->
             <div class="boss parent">
 
                 <!-- 보스이미지 1 -->
-                <div class="boss1 brother1" onmouseover="사라져()" onmouseleave="보여줘()">
+                <div class="boss1 brother1">
                     <img src="./발사믹/img/다중 보스전.gif" alt="다중 보스전">
                     <span>Wellcome To The</span>
                     <!-- 1차 워닝 -->
@@ -290,7 +235,7 @@
                     </div>
 
                 <!-- 보스이미지 2 -->
-                <div class="boss2 brother2" onmouseover="사라져(),사라져2()" onmouseleave="보여줘(),보여줘2()">
+                <div class="boss2 brother2">
                     <video muted autoplay loop>
                         <source src="발사믹/img/fight.mp4" type="video/mp4">
                         <strong>Your browser does not support the video tag.</strong>
@@ -299,7 +244,7 @@
                 </div>
 
                     <!-- 2차 워닝 -->
-                    <div class="fbx f2 animated-title2" onmouseover="사라져(),사라져2()" onmouseleave="보여줘(),보여줘2()">
+                    <div class="fbx f2 animated-title2">
                         <div class="tbx">
                             <ul>
                                 <li>WARNING!</li>

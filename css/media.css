@@ -21,7 +21,7 @@
 }
 
 .gnb ul li{
-    width: 10vw;
+    width: 11vw;
 }
 
 .gnb ol{
@@ -30,20 +30,41 @@
 
 .gnb::after {
     width: 100vw;
+    left: -25vw;
   }
-
 
 .lang{
     position: absolute;
     right: 2vw;
 }
 
+.lan{
+    height: 25px;
+}
+
+.lan a{
+    padding: 5px;
+    line-height:15px;
+
+}
+
 header ul li a{
     padding: 0;
 }
 
+.top .start{
+    bottom: -140px;
+}
+
+.top .start span{
+    font-size: 2.5rem;
+}
 
 
+.job{
+    flex-basis: 50%;
+    flex-wrap: wrap;
+}
 
 /* 워닝 부분 */
 .animated-title{
