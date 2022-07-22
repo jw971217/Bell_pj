@@ -84,7 +84,7 @@ header ul li a{
     */
     /* 트랜지션:속시이지 */
     transition: .3s; 
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -110,7 +110,7 @@ header ul li a{
 
   /* ul 초기화 */
   .gnb ul {
-    width: 50vw;
+    width: 100;
     margin: 0 auto;
   }
   
@@ -123,8 +123,6 @@ header ul li a{
   
   /* 상위 li 리스트요소 */
   .gnb>ul>li{
-    float: left;
-    width: 150px;
     text-align: center;
   }
   
@@ -327,7 +325,7 @@ header ul li a{
   border-radius: 50%;
   background-color: yellow;
   position: absolute;
-  bottom: -125px;
+  bottom: -130px;
   left: 50%;
   transform: translateX(-50%);
   border: 20px double #01dd77;
@@ -343,7 +341,7 @@ header ul li a{
 
 .top .start span{
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: bold;
   display: block;
   padding-top: 10px;
