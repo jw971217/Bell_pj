@@ -234,8 +234,9 @@ border: none;
 
 .sns{
     top: 125px;
-    left: calc(50% - 162px);
+    left: calc(50% - 8 0px);
     position: absolute;
+    width: 160px;
 }
 
 
