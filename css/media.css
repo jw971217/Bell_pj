@@ -55,7 +55,7 @@
 .head h1{
     position: relative;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -35%);
 }
 
 /* 겜 스타트 버튼 작게 만들기 */
@@ -232,10 +232,13 @@ address{
 }
 
 .container1, .container2{
-    /* left: 90vw; */
+    /* right: 0px;
+    bottom: 0px; */
 }
 
-
+body{
+    overflow-x: hidden;
+}
 
 
 

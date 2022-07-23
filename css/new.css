@@ -90,6 +90,7 @@ header ul li a{
   padding: 0;
   margin: 0;
   color: #000;
+  top: 3px;
 
   /* 처음에 안보임 */
   display: none;
@@ -192,6 +193,7 @@ body.on .top .ham::before{
     height: 100%;
     /* 트랜지션:속시이지 */
     transition: .3s; 
+    white-space: nowrap;
   }
 
   /* 상단 메뉴 글자에 밑줄 애니 */
@@ -386,7 +388,7 @@ body.on .top .ham::before{
   border-radius: 50%;
   background-color: yellow;
   position: absolute;
-  bottom: -160px;
+  bottom: -165px;
   left: 50%;
   transform: translateX(-50%);
   border: 20px double #01dd77;
@@ -410,7 +412,8 @@ body.on .top .ham::before{
 }
 
 .cont{
-    /* padding-top: 5vh; */
+    width: 100vw;
+    overflow-x: hidden
 }
 
 /* 백그라운드 이미지 영역 */
