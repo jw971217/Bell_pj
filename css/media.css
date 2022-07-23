@@ -46,11 +46,6 @@
 
 /************* 870px 이하 시작 *************/
 @media screen and (max-width: 870px) {
-/* 네비게이션 안 보이게 하기 */
-.gnb{
-    display: none;
-}
-
 /* 언어 영역 안 보이게 하기 */
 .lang{
     display: none;
@@ -58,10 +53,9 @@
 
 /* 로고 가운대로 오기 */
 .head h1{
-    position: absolute;
+    position: relative;
     left: 50%;
-    height: 4vh;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
 }
 
 /* 겜 스타트 버튼 작게 만들기 */
@@ -232,8 +226,6 @@ border: none;
     width: 160px;
 }
 
-
-
 address{
     top: -5vh;
     position: relative;
@@ -242,6 +234,86 @@ address{
 .container1, .container2{
     
 }
+
+
+
+
+
+
+
+
+
+
+
+    /* 9. GNB메뉴 변경 */
+    .gnb {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000000b3;
+        /* 처음에 안보임! */
+        display: none;
+    }
+    .gnb ul{
+        /* 세로방향 */
+        flex-direction: column;
+        margin-top: 20vh;
+        /* 위에서 20% 보이는 위치로 이동! */
+    }
+    .gnb>ul>li>a{
+        font-size: 5vh;
+        line-height: 10vh;
+        /* 메뉴6개 - 보이는 화면 높이값의 60% 차지 */
+        text-align: center;
+        color: #fff;
+    }
+    /* 서브메뉴, 서브배경 모두 없앰! */
+    .smenu,.gnb>ul>li.sm::after{
+        display: none;
+    }
+    /* 상위메뉴 오버시 밑줄없앰! */
+    .gnb>ul>li:hover>a{
+        border-bottom-color: transparent;
+    }
+    /* 10. 햄버거버튼 보이기 */
+    .ham{
+        display: block;
+        z-index: 99999999;
+    }
+    /* 11. GNB메뉴 보이기 */
+    body.on .top .gnb{
+        display: block;
+    }
+
+    /* 12. 캐릭터박스 GNB메뉴 보일때 아래로 내리기
+    - 트랜스폼 애니메이션으로 위치 위로 올라옴! */
+    body.on .cat{   
+        z-index: -1;
+    }
+
+    /* 13. GNB메뉴 보일때 스크롤 없앰! */
+    body.on{
+        overflow: hidden;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
