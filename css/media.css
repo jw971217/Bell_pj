@@ -189,8 +189,38 @@ transform: translateY(63%);
     bottom: -64.7vh;
 }
 
-.info ul li{
-    
+.house{
+    display: none;
+}
+
+.info ul{
+/* 플랙스박스 */
+display: flex;
+/* 랩핑박스 */
+flex-wrap: wrap;
+
+/* 수평정렬 */
+justify-content: space-evenly;
+/* 수직정렬(여러줄) */
+align-content: center;
+margin-top: 10px;
+}
+
+/* brk뒤의 li 마진탑 */
+.t7 li.brk~li{
+margin-top: 5px;
+}
+
+/* 자체 응용 - 줄바꿈을 위한 li */
+/* 원리는 줄바꿈을 할 부분에서 가로크기 100%를 차지하게 해서 줄바꿈 효과를 준다. */
+.t7 li.brk{
+/* width: 100%; */
+flex-basis: 100%;
+/* flex-basis는 width와 같다. */
+
+/* 기존디자인을 없애고 안보이게 처리함 */
+height: 0;
+border: none;
 }
 
 
@@ -198,13 +228,22 @@ transform: translateY(63%);
 
 
 
+.info img{
+    bottom: -15px;
+}
+
+.sns{
+    top: 125px;
+    left: calc(50% - 162px);
+    position: absolute;
+}
 
 
 
-
-
-
-
+address{
+    top: -5vh;
+    position: relative;
+}
 
 
 }
