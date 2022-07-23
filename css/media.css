@@ -168,17 +168,16 @@ transform: translateY(63%);
     left: -80px;
 }
 
-
-.info{
-    margin-top: 65vh;
-}
-
 .bounce{
     bottom: -57vh;
 }
 
 .rint .rab, .snow{
     bottom: -64.7vh;
+}
+
+.snow{
+    
 }
 
 .house{
@@ -220,7 +219,7 @@ border: none;
 }
 
 .sns{
-    top: 140px;
+    top: 130px;
     left: calc(50% - 80px);
     position: absolute;
     width: 160px;

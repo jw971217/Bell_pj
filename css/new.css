@@ -1698,12 +1698,6 @@ to{
 }
 
 
-
-
-
-
-
-
 }/* 키프레임 */
 
 /* 집 */
@@ -1735,7 +1729,7 @@ footer{
     height: 200px;
     background-color: rgb(39, 39, 39);
     position: absolute;
-    margin-top: 20vh;
+    /* margin-top: 20vh; */
 }
 
 /* 하단 네비 */
