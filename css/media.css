@@ -176,8 +176,32 @@ transform: translateY(63%);
     bottom: -64.7vh;
 }
 
-.snow{
-    
+@keyframes snowAni {
+    0% {
+      right: 30vw;
+    }
+      20% {
+      right: 35vw;
+    }
+      40% {
+      right: 35vw;
+    }
+      60% {
+      transform: rotateY(0deg);
+    }
+    60.01%{
+      transform: rotateY(180deg);
+      right: 35vw;
+    }
+  
+      80% {
+      right: 35vw;
+      transform: rotateY(180deg);
+    }
+      100% {
+      right: 30vw;
+      transform: rotateY(180deg);
+    }
 }
 
 .house{
