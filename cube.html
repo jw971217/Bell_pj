@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cube.css">
+    <link rel="stylesheet" href="./css/cubeani.css">
+    <title>Rolling 3*3 Cube 3D Animation</title>
+    <script>
+        /******************************************************************** 
+            함수명: goR
+            기능: 큐브 돌기/멈추기
+        ********************************************************************/
+       function goR(){
+        // 1. 호출확인
+        console.log("나야나!")
+        // 2. 대상선정: 큐브 - .cube / 버튼 - .btns button
+        var cube = document.querySelector(".cube");
+        var btns = document.querySelector(".btns button");
+
+        // 3. 클래스 넣기
+        // 클래스 제어 내장객체
+        // classList
+        // 이 객체가 메서드를 가짐
+        // (1) add(클래스명)
+        // (2) remove(클래스명)
+        // (3) toggle(클래스명) -> 유무에 따라
+        // (4) contains(클래스명) -> 있으면 true
+        cube.classList.toggle("on");
+
+        // sts는 클래스 유무여부를 담는 변수
+        var sts = cube.classList.contains("on");
+
+        console.log("on있니?", sts);
+
+        // 조건연산자(비?집: 놀이동산)
+        // 이퀄 오른쪽의 조건연산자가 값을 결정하여 
+        // 왼쪽으로 할당하게 한다.
+        
+        // true / false가 나오는 sts변수에 값을 담음
+
+        // 버튼 글자 바꾸기
+        btns.innerText=sts? sts="멈춰" : sts="돌아";
+
+       }/////////////////////goR 함수///////////////////////////////////////////
+       /////////////////////////////////////////////////////////////////////////
+
+    </script>
+</head>
+
+<body>
+    <!-- 버튼박스 -->
+    <div class="btns">
+        <button onclick="goR()">돌아</button>
+    </div>
+
+
+    <!-- 큐브 -->
+    <div class="cube cube-ani">
+        <!-- 기본 축들 -->
+        <!-- 앞면 -->
+        <span>
+            <span class="front"></span>
+            <span class="front"></span>
+            <span class="front"></span>
+            <span class="front"></span>
+            <span class="front"></span>
+            <span class="front"></span>
+            <span class="front"></span>
+            <span class="front"></span>
+        </span>
+        <!-- 오른쪽면 -->
+        <span>
+            <span class="right"></span>
+            <span class="right"></span>
+            <span class="right"></span>
+            <span class="right"></span>
+            <span class="right"></span>
+            <span class="right"></span>
+            <span class="right"></span>
+            <span class="right"></span>
+        </span>
+        <!-- 뒷면 -->
+        <span>
+            <span class="behind"></span>
+            <span class="behind"></span>
+            <span class="behind"></span>
+            <span class="behind"></span>
+            <span class="behind"></span>
+            <span class="behind"></span>
+            <span class="behind"></span>
+            <span class="behind"></span>
+        </span>
+        <!-- 왼쪽면 -->
+        <span>
+            <span class="left"></span>
+            <span class="left"></span>
+            <span class="left"></span>
+            <span class="left"></span>
+            <span class="left"></span>
+            <span class="left"></span>
+            <span class="left"></span>
+            <span class="left"></span> 
+        </span>
+        <!-- 욋면 -->
+        <span>
+            <span class="top"></span>
+            <span class="top"></span>
+            <span class="top"></span>
+            <span class="top"></span>
+            <span class="top"></span>
+            <span class="top"></span>
+            <span class="top"></span>
+            <span class="top"></span> 
+        </span>
+        <!-- 아랫면 -->
+        <span>
+            <span class="bottom"></span>
+            <span class="bottom"></span>
+            <span class="bottom"></span>
+            <span class="bottom"></span>
+            <span class="bottom"></span>
+            <span class="bottom"></span>
+            <span class="bottom"></span>
+            <span class="bottom"></span> 
+        </span>
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -319,6 +319,9 @@ body{
     body.on h1{   
         z-index: -1;
     }
+    body.on .container{   
+        z-index: -1;
+    }
 
     /* 13. GNB메뉴 보일때 스크롤 없앰! */
     body.on{
