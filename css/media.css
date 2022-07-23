@@ -28,34 +28,20 @@ header ul li a{
 
 .job .lo{
     width: 50%;
+    
+}
+
+.job .lo .toss{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 /* 워닝 부분 */
 .animated-title{
     line-height: 0.2;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 /************* 1070px 이하 끝 *************/
 
@@ -63,6 +49,162 @@ header ul li a{
 
 /************* 870px 이하 시작 *************/
 @media screen and (max-width: 870px) {
+/* 네비게이션 안 보이게 하기 */
+.gnb{
+    display: none;
+}
+
+/* 언어 영역 안 보이게 하기 */
+.lang{
+    display: none;
+}
+
+/* 로고 가운대로 오기 */
+.head h1{
+    position: absolute;
+    left: 50%;
+    height: 30px;
+    transform: translateX(-50%);
+}
+
+/* 겜 스타트 버튼 작게 만들기 */
+.top .start{
+    width: 150px;
+    height: 150px;
+    bottom: -100px;
+}
+
+.top .start span{
+    font-size: 1.8rem;
+  }
+
+  /* build 글자가 너무 붙어 있어서 때 줌 */
+.build{
+    margin-top: 20px;
+    position: relative;
+    display: block;
+}
+
+/* 화살표 위치 재조정 */
+.cont .int h3{
+    top: 97vh;
+}
+
+/* 그림과 글자들 수직 방향으로 만들기 */
+.gint{
+    flex-direction: column;
+}
+
+/* 글자와 그림 순서 바꾸기 */
+.gint1, .gint3{
+    display: flex;
+    flex-direction: column-reverse
+}
+
+/* 글자와 그림 크기 재조정 */
+.gint img{
+    width: 90vw;
+}
+
+.gint .word span{
+    width: 80vw;
+}
+
+/* 파도치는 글자들 크기 재조정 */
+.test_obj span {
+    font-size: 12vw;
+}
+
+/* 직업 선택창 수직화 */
+.job{
+    flex-direction: column;
+    align-content: center
+}
+
+/* 보스 이미지 수직화 */
+.boss{
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* 보스 상자 크기 크기 및 설정 재조정 */
+.boss .boss1, .boss .boss2, .boss .boss3{
+    display: flex;
+    position: relative;
+    height: 60vh;
+}
+
+/* gif와 비디오 크기 및 설정 재조정 */
+.boss img, .boss video{
+    width: 90vw;
+    transform: translateY(-60%);
+}
+
+/* 보스 상자 글자 크기 재조정 */
+.boss span{
+/* position: absolute; */
+transform: translateY(63%);
+}
+
+/* 굿럿 상자 위치 재조정 */
+.good{
+    top: -30.5vh;
+}
+
+/* 큐브 글자 크기 조정 */
+.more .text{
+    font-size: 3.5vw;
+}
+
+/* 회사랑 내 소개 글자 및 그림들 크기 조정 */
+.rint .pro span{
+    font-size: 12vw;
+}
+
+.relo{
+    height: 85vh;
+    position: relative;
+
+
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.satellite_box{
+    left: -80px;
+}
+
+
+.info{
+    margin-top: 65vh;
+}
+
+.bounce{
+    bottom: -57vh;
+}
+
+.rint .rab, .snow{
+    bottom: -64.7vh;
+}
+
+.info ul li{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
