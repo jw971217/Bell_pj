@@ -12,9 +12,6 @@
     width: 11vw;
 }
 
-header ul li a{
-    /* padding: 0; */
-}
 
 .top .start span{
     font-size: 2.5rem;
@@ -63,7 +60,7 @@ header ul li a{
 .head h1{
     position: absolute;
     left: 50%;
-    height: 30px;
+    height: 4vh;
     transform: translateX(-50%);
 }
 
@@ -87,7 +84,7 @@ header ul li a{
 
 /* 화살표 위치 재조정 */
 .cont .int h3{
-    top: 97vh;
+    top: 93vh;
 }
 
 /* 그림과 글자들 수직 방향으로 만들기 */
@@ -139,6 +136,7 @@ header ul li a{
 .boss img, .boss video{
     width: 90vw;
     transform: translateY(-60%);
+    object-fit: cover;
 }
 
 /* 보스 상자 글자 크기 재조정 */
@@ -223,18 +221,13 @@ height: 0;
 border: none;
 }
 
-
-
-
-
-
 .info img{
-    bottom: -15px;
+    bottom: -5px;
 }
 
 .sns{
-    top: 125px;
-    left: calc(50% - 8 0px);
+    top: 140px;
+    left: calc(50% - 80px);
     position: absolute;
     width: 160px;
 }
@@ -245,6 +238,12 @@ address{
     top: -5vh;
     position: relative;
 }
+
+.container1, .container2{
+    
+}
+
+
 
 
 }
