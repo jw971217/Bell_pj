@@ -420,7 +420,7 @@ body.on .top .ham::before{
 .cont .lalala{
     width: 100%;
     height: 74vh;
-    background: url(../발사믹/img/180cf1b1d2123e14e.gif) no-repeat bottom/cover;
+    background: url(../balsamic/img/180cf1b1d2123e14e.gif) no-repeat bottom/cover;
     border-bottom: 10px solid rgb(255, 255, 0);
 }
 
@@ -1107,39 +1107,39 @@ right: 13vw;
 
 /* 앞면 */
 .cube1 span:nth-child(1){
-  background: url(발사믹/img/문로드\ 보스.jpg) no-repeat right/auto 105%;
+  background: url(balsamic/img/문로드\ 보스.jpg) no-repeat right/auto 105%;
   /* 화면방향(Z축) */
   transform: translateZ(12.5vw);
 }
 
 /* 2. 오른쪽면 */
 .cube1 span:nth-child(2){
-  background: url(발사믹/img/기계지렁이.jpeg) no-repeat center/cover;
+  background: url(balsamic/img/기계지렁이.jpeg) no-repeat center/cover;
   /* 화면방향(Z축) */
   transform:  rotateY(90deg)translateZ(12.5vw);
 }
 /* 3. 뒷면 */
 .cube1 span:nth-child(3){
-  background: url(발사믹/img/플렌테라.jpg) no-repeat center/cover;
+  background: url(balsamic/img/플렌테라.jpg) no-repeat center/cover;
   /* 화면방향(Z축) */
   transform:  rotateY(180deg)translateZ(12.5vw);
 }
 /* 4. 왼쪽면 */
 .cube1 span:nth-child(4){
-  background: url(발사믹/img/공작.jpeg) no-repeat center/cover;
+  background: url(balsamic/img/공작.jpeg) no-repeat center/cover;
   /* 화면방향(Z축) */
   transform:  rotateY(-90deg)translateZ(12.5vw);
 }
 /* 5. 윗면 */
 .cube1 span:nth-child(5){
-  background: url(발사믹/img/여왕벌\ 보스.jpg) no-repeat top/cover;
+  background: url(balsamic/img/여왕벌\ 보스.jpg) no-repeat top/cover;
   /* 화면방향(Z축) */
   transform:  rotateX(90deg)translateZ(12.5vw) rotate(90deg);
   
 }
 /* 6. 아랫면 */
 .cube1 span:nth-child(6){
-  background: url(발사믹/img/눈깔\ 보스.jpg) no-repeat center/cover;
+  background: url(balsamic/img/눈깔\ 보스.jpg) no-repeat center/cover;
   /* 화면방향(Z축) */
   transform:  rotateX(-90deg)translateZ(12.5vw);
 }
@@ -1191,26 +1191,26 @@ right: 13vw;
 
 /* 앞면 */
 .cube2 span:nth-child(1){
-  background: url(발사믹/img/정글배경.gif) no-repeat center/cover;
+  background: url(balsamic/img/정글배경.gif) no-repeat center/cover;
   /* 화면방향(Z축) */
   transform: translateZ(15vw) rotate(0deg);
 }
 
 /* 2. 오른쪽면 */
 .cube2 span:nth-child(2){
-  background: url(발사믹/img/사막\ 배굥.gif) no-repeat center/cover;
+  background: url(balsamic/img/사막\ 배굥.gif) no-repeat center/cover;
   /* 화면방향(Z축) */
   transform:  rotateX(-90deg)translateZ(15vw);
 }
 /* 3. 뒷면 */
 .cube2 span:nth-child(3){
-  background: url(발사믹/img/지옥\ 배경.gif) no-repeat center/cover;
+  background: url(balsamic/img/지옥\ 배경.gif) no-repeat center/cover;
   /* 화면방향(Z축) */
   transform:  rotateX(-180deg)translateZ(15vw);
 }
 /* 4. 왼쪽면 */
 .cube2 span:nth-child(4){
-  background: url(발사믹/img/눈\ 배경.gif) no-repeat center/cover;
+  background: url(balsamic/img/눈\ 배경.gif) no-repeat center/cover;
   /* 화면방향(Z축) */
   transform:  rotateX(90deg)translateZ(15vw);
 }
@@ -1284,45 +1284,45 @@ right: 13vw;
 
 /* 앞면 */
 .cube3 span:nth-child(1){
-  background: url(발사믹/img/테라프리즈마.png) no-repeat center/cover;
+  background: url(balsamic/img/테라프리즈마.png) no-repeat center/cover;
   /* 화면방향(Z축) */
   transform: translateZ(10vw) rotate(90deg) rotate(-90deg);
 }
 
 /* 2. 오른쪽면 */
 .cube3 span:nth-child(2){
-  background: url(발사믹/img/낫-removebg-preview.png) no-repeat center/cover;
+  background: url(balsamic/img/낫-removebg-preview.png) no-repeat center/cover;
   /* 화면방향(Z축) */
   transform:  rotateY(90deg)translateZ(10vw);
 }
 /* 3. 뒷면 */
 .cube3 span:nth-child(3){
-  background: url(발사믹/img/별의_진노-removebg-preview.png) no-repeat center/cover;
+  background: url(balsamic/img/별의_진노-removebg-preview.png) no-repeat center/cover;
   /* 화면방향(Z축) */
   transform:  rotateY(180deg)translateZ(10vw);
 }
 /* 4. 왼쪽면 */
 .cube3 span:nth-child(4){
-  background: url(발사믹/img/프리즈마-removebg-preview.png) no-repeat center/cover;
+  background: url(balsamic/img/프리즈마-removebg-preview.png) no-repeat center/cover;
   /* 화면방향(Z축) */
   transform:  rotateY(-90deg)translateZ(10vw);
 }
 /* 5. 윗면 */
 .cube3 span:nth-child(5){
-  background: url(발사믹/img/활-removebg-preview.png) no-repeat center/contain;
+  background: url(balsamic/img/활-removebg-preview.png) no-repeat center/contain;
   /* 화면방향(Z축) */
   transform:  rotateX(90deg)translateZ(10vw) rotate(90deg);
   
 }
 /* 6. 아랫면 */
 .cube3 span:nth-child(6){
-  background: url(발사믹/img/지팡이-removebg-preview.png) no-repeat center/cover;
+  background: url(balsamic/img/지팡이-removebg-preview.png) no-repeat center/cover;
   /* 화면방향(Z축) */
   transform:  rotateX(-90deg)translateZ(10vw) rotate(90deg);
 }
 /* 7. wndrks면 */
 .cube3 span:nth-child(7){
-  background: url(발사믹/img/법사_책-removebg-preview.png) no-repeat center/cover;
+  background: url(balsamic/img/법사_책-removebg-preview.png) no-repeat center/cover;
   /* 화면방향(Z축) */
   transform:  rotateX(-90deg)rotate(90deg);
 }
@@ -1354,26 +1354,26 @@ right: 13vw;
 
 /* 앞면 */
 .cube4 span:nth-child(1){
-  background: url(발사믹/img/가이드.png) no-repeat bottom/cover;
+  background: url(balsamic/img/가이드.png) no-repeat bottom/cover;
   /* 화면방향(Z축) */
   transform: translateZ(6vw) rotate(0deg);
 }
 
 /* 2. 오른쪽면 */
 .cube4 span:nth-child(2){
-  background: url(발사믹/img/상인.png) no-repeat bottom/cover;
+  background: url(balsamic/img/상인.png) no-repeat bottom/cover;
   /* 화면방향(Z축) */
   transform:  rotateY(90deg)translateZ(6vw);
 }
 /* 3. 뒷면 */
 .cube4 span:nth-child(3){
-  background: url(발사믹/img/간호사.png) no-repeat bottom/cover;
+  background: url(balsamic/img/간호사.png) no-repeat bottom/cover;
   /* 화면방향(Z축) */
   transform:  rotateY(180deg)translateZ(6vw);
 }
 /* 4. 왼쪽면 */
 .cube4 span:nth-child(4){
-  background: url(발사믹/img/총기상인.png) no-repeat bottom/cover;
+  background: url(balsamic/img/총기상인.png) no-repeat bottom/cover;
   /* 화면방향(Z축) */
   transform:  rotateY(-90deg)translateZ(6vw);
 }
@@ -1720,7 +1720,7 @@ footer{
   width: 100%;
   height: 10px;
   position: absolute;
-  background: url(/발사믹/img/네비게이션\ 용\ 사진.png) repeat-x;
+  background: url(/balsamic/img/네비게이션\ 용\ 사진.png) repeat-x;
   top: -10px;
 }
 
@@ -1788,7 +1788,7 @@ address{
 .sns li{
   width: 34px;
   height: 34px;
-  background: url(../발사믹/img/sprites_logo.png) no-repeat;
+  background: url(../balsamic/img/sprites_logo.png) no-repeat;
   margin: 0 2px;
   /* 필터: 흑백 */
   filter: grayscale(100%);
