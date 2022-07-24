@@ -388,7 +388,7 @@ body.on .top .ham::before{
 .cont .lalala{
     width: 100%;
     height: 74vh;
-    background: url(./balsamic/img/180cf1b1d2123e14e.gif) no-repeat bottom/cover;
+    background: url(../images/180cf1b1d2123e14e.gif) no-repeat bottom/cover;
     border-bottom: 10px solid rgb(255, 255, 0);
 }
 
@@ -1075,39 +1075,39 @@ right: 13vw;
 
 /* 앞면 */
 .cube1 span:nth-child(1){
-  background: url(balsamic/img/moonlordboss.jpg) no-repeat right/auto 105%;
+  background: url(../balsamic/img/moonlordboss.jpg) no-repeat right/auto 105%;
   /* 화면방향(Z축) */
   transform: translateZ(12.5vw);
 }
 
 /* 2. 오른쪽면 */
 .cube1 span:nth-child(2){
-  background: url(balsamic/img/기계지렁이.jpeg) no-repeat center/cover;
+  background: url(./balsamic/img/기계지렁이.jpeg) no-repeat center/cover;
   /* 화면방향(Z축) */
   transform:  rotateY(90deg)translateZ(12.5vw);
 }
 /* 3. 뒷면 */
 .cube1 span:nth-child(3){
-  background: url(balsamic/img/플렌테라.jpg) no-repeat center/cover;
+  background: url(./balsamic/img/플렌테라.jpg) no-repeat center/cover;
   /* 화면방향(Z축) */
   transform:  rotateY(180deg)translateZ(12.5vw);
 }
 /* 4. 왼쪽면 */
 .cube1 span:nth-child(4){
-  background: url(balsamic/img/공작.jpeg) no-repeat center/cover;
+  background: url(./balsamic/img/공작.jpeg) no-repeat center/cover;
   /* 화면방향(Z축) */
   transform:  rotateY(-90deg)translateZ(12.5vw);
 }
 /* 5. 윗면 */
 .cube1 span:nth-child(5){
-  background: url(balsamic/img/여왕벌\ 보스.jpg) no-repeat top/cover;
+  background: url(../balsamic/img/queenbee.jpg) no-repeat top/cover;
   /* 화면방향(Z축) */
   transform:  rotateX(90deg)translateZ(12.5vw) rotate(90deg);
   
 }
 /* 6. 아랫면 */
 .cube1 span:nth-child(6){
-  background: url(balsamic/img/눈깔\ 보스.jpg) no-repeat center/cover;
+  background: url(../balsamic/img/eyes.jpg) no-repeat center/cover;
   /* 화면방향(Z축) */
   transform:  rotateX(-90deg)translateZ(12.5vw);
 }
