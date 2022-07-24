@@ -12,11 +12,20 @@
 
 
 @keyframes frAni {
-    
+    to{
+        transform: rotate(-90deg) translateZ(150px) ;
+        transform-origin: center center;
+    }
 }
 
 
-
+@keyframes frrAni {
+    to{
+        transform: rotateX(90deg) translateZ(150px) translateY(100px);
+        background-color: rgb(38, 0, 255);
+        position: relative;
+    }
+}
 
 
 

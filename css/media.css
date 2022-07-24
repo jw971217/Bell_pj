@@ -13,7 +13,7 @@
 }
 
 
-.top .start span{
+.lalala .start span{
     font-size: 2.5rem;
 }
 
@@ -59,13 +59,13 @@
 }
 
 /* 겜 스타트 버튼 작게 만들기 */
-.top .start{
+.lalala .start{
     width: 150px;
     height: 150px;
     bottom: -100px;
 }
 
-.top .start span{
+.lalala .start span{
     font-size: 1.8rem;
   }
 

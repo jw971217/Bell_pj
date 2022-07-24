@@ -1739,6 +1739,10 @@ footer{
     transform: translateY(-5px);
 }
 
+.brk{
+  /* display: none; */
+}
+
 .info ul li a{
   color: #fff;
   display: block;

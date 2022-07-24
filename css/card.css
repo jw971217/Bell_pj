@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/* 전체배경 */
+body {
+    background-image: linear-gradient(to bottom, rgb(255, 243, 111) 30%, rgb(191, 95, 255) 70%);
+}
+*{
+    /* outline: 1px dashed coral; */
+}
+
+
+
+.one{
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: rkAni 8s ease-in-out infinite alternate;
+}
+
+.one img{
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    border-radius: 5px;
+}
+
+.one .fool img{
+    top: -200px;
+}
+
+.rotate{
+    top: -175px;
+    left: 25px;
+    height: 200px;
+    position: absolute;
+    transform-origin: center bottom;
+}
+
+/* 세계 */
+.wor{
+    width: 50px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    position: relative;
+    animation: rrkAni 8s ease-in-out infinite alternate;
+    transform-origin: center center;
+}
+.wor img{
+    position: relative;
+    top: -25px;
+}
+
+/* 바보 */
+.rotate1{
+    transform: rotate(0deg);
+}
+.one .rotate1 .fool img{
+    top: -50px;
+}
+
+/* 마술사 */
+.rotate2{
+    transform: rotate(30deg);
+}
+.one .rotate2 .mage img{
+    top: -50px;
+}
+
+/* 여교황 */
+.rotate3{
+    transform: rotate(60deg);
+}
+.one .pri img{
+    top: -50px;
+}
+
+/* 여제 */
+.rotate4{
+    transform: rotate(90deg);
+}
+.one .emp img{
+    top: -50px;
+    left: -25px;
+}
+
+/* 황제 */
+.rotate5{
+    transform: rotate(120deg);
+}
+.one .emper img{
+    top: -50px;
+    left: -25px;
+}
+
+/* 교황 */
+.rotate6{
+    transform: rotate(150deg);
+}
+.one .hir img{
+    top: -50px;
+    left: -25px;
+}
+
+/* 연인 */
+.rotate7{
+    transform: rotate(180deg);
+}
+.one .love img{
+    top: -50px;
+    left: -25px;
+}
+
+/* 전차 */
+.rotate8{
+    transform: rotate(210deg);
+}
+.one .cha img{
+    top: -50px;
+    left: -25px;
+}
+
+/* 힘 */
+.rotate9{
+    transform: rotate(240deg);
+}
+.one .str img{
+    top: -50px;
+    left: -25px;
+}
+
+/* 은둔자 */
+.rotate10{
+    transform: rotate(270deg);
+}
+.one .her img{
+    top: -50px;
+    left: -25px;
+}
+
+/* 운명의 수레바퀴 */
+.rotate11{
+    transform: rotate(300deg);
+}
+.one .wheel img{
+    top: -50px;
+    left: -25px;
+}
+
+/* 정의 */
+.rotate12{
+    transform: rotate(330deg);
+}
+.one .jus img{
+    top: -50px;
+    left: -25px;
+}
+
+/* 매달린 남자 */
+.rotate13{
+    transform: rotate(0deg);
+}
+.one .hang img{
+    top: -200px;
+    left: -25px;
+}
+
+/* 죽음 */
+.rotate14{
+    transform: rotate(40deg);
+}
+.one .death img{
+    top: -200px;
+    left: -25px;
+}
+/* 절제 */
+.rotate15{
+    transform: rotate(80deg);
+}
+.one .tem img{
+    top: -200px;
+    left: -25px;
+}
+
+/* 악마 */
+.rotate16{
+    transform: rotate(120deg);
+}
+.one .dev img{
+    top: -200px;
+    left: -25px;
+}
+
+/* 탑 */
+.rotate17{
+    transform: rotate(160deg);
+}
+.one .tower img{
+    top: -200px;
+    left: -25px;
+}
+
+/* 별 */
+.rotate18{
+    transform: rotate(200deg);
+}
+.one .star img{
+    top: -200px;
+    left: -25px;
+}
+
+/* 달 */
+.rotate19{
+    transform: rotate(240deg);
+}
+.one .moon img{
+    top: -200px;
+    left: -25px;
+}
+
+/* 해 */
+.rotate20{
+    transform: rotate(280deg);
+}
+.one .sun img{
+    top: -200px;
+    left: -25px;
+}
+
+/* 심판 */
+.rotate21{
+    transform: rotate(320deg);
+}
+.one .judge img{
+    top: -200px;
+    left: -25px;
+}
+
+
+.roro{
+    animation: rrkAni 7s ease-in-out infinite forwards alternate;
+}
+
+
+@keyframes rkAni {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rrkAni {
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
