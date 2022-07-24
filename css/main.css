@@ -1107,7 +1107,7 @@ right: 13vw;
 
 /* 앞면 */
 .cube1 span:nth-child(1){
-  background: url(balsamic/img/문로드\ 보스.jpg) no-repeat right/auto 105%;
+  background: url(balsamic/img/moonlordboss.jpg) no-repeat right/auto 105%;
   /* 화면방향(Z축) */
   transform: translateZ(12.5vw);
 }
