@@ -1,17 +1,57 @@
 @charset "utf-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 html,body {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow-y: hidden;
+    overflow-x: hidden;
+    font-size: 10px;
 }
 /* 전체배경 */
 body {
-    background-image: linear-gradient(to bottom, rgb(255, 243, 111) 30%, rgb(191, 95, 255) 70%);
+    background-image: linear-gradient(to bottom, rgb(224, 224, 224) 30%, rgb(255, 241, 202) 70%);
 }
 *{
     /* outline: 1px dashed coral; */
+}
+
+/* 로고 */
+.head{
+    z-index: 99999999999999999999999999999999999999999;
+    background-color: #fff;
+    border-bottom: 2px solid #000;
+    position: absolute;
+}
+
+h1{
+    text-align: center;
+    width: 100vw;
+    height: 3rem;
+    font-weight: bold;
+}
+
+h1 a{
+    line-height: 3rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+}
+
+.gnb{
+    position: absolute;
+    right: 2vw;
+    top: -5px;
+}
+
+.gnb span{
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+/* 컨텐츠 시작 */
+.cont{
+    width: 100vw;
+    height: 100vh;
 }
 
 .one{
@@ -23,13 +63,17 @@ body {
     border-radius: 50%;
     background-color: #fff;
     animation: rkAni 8s ease-in-out infinite alternate;
+    z-index: -1;
+}
+
+.one div img{
+    box-shadow: 1px 1px 3px#000;
 }
 
 .one img{
     width: 50px;
     height: 100px;
     position: absolute;
-    top: calc(50% - 25px);
     left: calc(50% - 25px);
     border-radius: 5px;
 }
@@ -246,6 +290,7 @@ body {
     left: -25px;
 }
 
+/* 애니메이션 영역 */
 .roro{
     animation: rrkAni 7s ease-in-out infinite forwards alternate;
 }
@@ -261,3 +306,65 @@ body {
         transform: rotate(-360deg);
     }
 }
+
+/* 푸터 */
+.info{
+    height: 3rem;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(73, 73, 73);
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+/* 어드레스 */
+address{
+    text-align: center;
+}
+
+address span{
+    color: #fff;
+    text-align: center;
+    line-height: 4.8rem;
+}
+
+
+
+/* sns */
+.sns{
+    position: absolute;
+    top: 160px;
+    right: 6vw;
+    /* 플렉스박스 */
+    display: flex;
+  }
+  
+  .sns li{
+    width: 34px;
+    height: 34px;
+    background: url(../balsamic/img/sprites_logo.png) no-repeat;
+    margin: 0 2px;
+    /* 필터: 흑백 */
+    filter: grayscale(100%);
+    /* 손가락모양 */
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  /* 오버시 칼라 */
+  .sns li:hover{
+    filter: grayscale(0);
+  }
+  
+  /* 페이스북 */
+  .sns li:first-child{
+    background-position: -509px -430px;
+  }
+  /* 트의터 */
+  .sns li:nth-child(2){
+    background-position: -551px -430px;
+  }
+  /* 인스타 */
+  .sns li:nth-child(3){
+    background-position: -592px -429px;
+  }
