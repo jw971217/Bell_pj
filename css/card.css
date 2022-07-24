@@ -13,8 +13,6 @@ body {
     /* outline: 1px dashed coral; */
 }
 
-
-
 .one{
     position: absolute;
     top: calc(50% - 25px);
@@ -247,11 +245,9 @@ body {
     left: -25px;
 }
 
-
 .roro{
     animation: rrkAni 7s ease-in-out infinite forwards alternate;
 }
-
 
 @keyframes rkAni {
     to{
@@ -264,33 +260,3 @@ body {
         transform: rotate(-360deg);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
