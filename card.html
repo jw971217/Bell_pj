@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/card.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Card</title>
 </head>
 <body>
@@ -13,20 +14,67 @@
     <header class="head">
         <h1><a href="#">The Tarrot</a></h1>
 
+        <!-- 유저 -->
         <div class="user">
             <span>
                 <a href="#">
-                    
+                    <i class="fa-solid fa-user"></i>
                 </a>
             </span>
         </div>
 
-        <div class="gnb">
-            <span>
-                <a href="#">≡</a>
-            </span>
+        <!-- 메뉴 버튼 -->
+        <div class="ham" onclick="document.body.classList.toggle('on')">
+            <span>≡</span>
         </div>
     </header>
+
+    <!-- 네비게이션 -->
+<nav class="gnb">
+        <ul>
+          <li>
+            <a href="#"><span>About Us</span></a>
+          </li>
+
+          <li>
+            <a href="#"><span>오늘의 운세</span></a>
+            <!-- 서브메뉴 -->
+            <div class="smenu">
+              <ol>
+                <li>
+                  <a href="#">연애운</a>
+                <span></li></span>
+                <li>
+                  <a href="#">학운</a>
+                </li>
+                <li>
+                  <a href="#">재물운</a>
+                </li>
+                <li>
+                  <a href="#">운운</a>
+                </li>
+              </ol>
+            </div>
+          </li>
+          <li>
+            <a href="#"><span>배열 카드점</span></a>
+            <!-- 서브메뉴 -->
+            <div class="smenu">
+              <ol>
+                <li>
+                  <a href="#">3배열 카드점</a>
+                </li>
+                <li>
+                  <a href="#">7배열 카드점</a>
+                </li>
+              </ol>
+            </div>
+          </li>
+          <li>
+            <a href="#"><span>게시판</span></a>
+          </li>
+        </ul>
+      </nav>
 
     <!-- 컨텐츠 시작 -->
     <div class="cont">
