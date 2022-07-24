@@ -191,7 +191,7 @@ body.on .gnb{
         /* 서브메뉴박스 숨기기 */
         height: 0; /* 1 */
         overflow: hidden; /* 2 */
-        background-color: rgb(255, 214, 176);
+        background-color: #dbcab3;
         border-radius: 0 0 5px 5px;
         /* 주의사항 : 높이값 0으로 숨기는 박스는 위아래 패딩, 보더는
         숨겨지지 않으므로 쓰지 않는다
@@ -233,23 +233,8 @@ body.on .gnb{
 
       /* 서브메뉴 오버시 */
       .smenu a:hover{
-        background: rgb(255, 214, 176);
-        color: rgb(148, 56, 56);
+        color: rgb(78, 0, 0);
       }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* 컨텐츠 시작 */
 .cont{
@@ -257,10 +242,55 @@ body.on .gnb{
     height: 100vh;
 }
 
+/* 돌아가는 카드 */
+.rk{
+    top: calc(50% - 250px);
+    position: absolute;
+    left: 10vw;
+    animation: ffAni 4s linear  infinite ;
+}
+
+@keyframes ffAni {
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+.fk{
+    background: url(../images/RWS_Tarot_00_Fool.jpg) no-repeat center/contain;
+    width: 200px;
+    height: 360px;
+    border-radius: 5px;
+    transform: rotate(-30deg);
+
+}
+
+/* chu */
+.chu{
+    position: absolute;
+    top: 75%;
+    left: 6.2vw;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    border: 3px solid #000;
+    width: 310px;
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 10px;
+    background-color: #fff;
+    background: url(../images/e4c01b7f860d853cf586316a6e894dd4_t.jpeg);
+}
+
+.chu a{
+    display: block;
+}
+
 .one{
     position: absolute;
     top: calc(50% - 25px);
-    left: calc(50% - 25px);
+    left: calc(50% + 200px);
     width: 50px;
     height: 50px;
     border-radius: 50%;
